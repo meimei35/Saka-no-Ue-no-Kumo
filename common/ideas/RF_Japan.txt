@@ -1,58 +1,6 @@
 
 ideas = {
 	country = {
-		
-		JAP_yasuhito = {
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				army_org_factor = 0.10
-				justify_war_goal_time = -0.25
-				political_power_gain = -0.1
-			}
-		}
-		
-		JAP_instability = {
-			picture = generic_disjointed_gov
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				stability_factor = -0.1
-				political_power_gain = -0.5
-			}
-		}
-		
-		JAP_inequality = {
-			picture = FRA_scw_intervention_republicans_focus
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				war_support_factor = -0.1
-				consumer_goods_factor = 0.02
-				stability_factor = -0.05
-				
-			}
-		}
-		
-		JAP_rural_backwater = {
-			picture = prc_low_popular_support2
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				stability_factor = -0.05
-				MONTHLY_POPULATION = -0.5
-				conscription_factor = 0.01
-			}
-		}
-		
 		JAP_zaib_dominion = {
 			picture = jap_zaibatsu
 			removal_cost = -1

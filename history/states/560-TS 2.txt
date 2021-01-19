@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = ZHR
-		add_core_of = ZHR
+		owner = MAN
+		add_core_of = MAN
 		buildings = {
 			12559 = {
 				naval_base = 2

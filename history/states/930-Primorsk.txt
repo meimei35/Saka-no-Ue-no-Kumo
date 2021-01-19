@@ -9,14 +9,14 @@ state= {
 	}
 
 	history= {
-		owner = ZHR
+		owner = MAN
 		victory_points = {
 			6961 3
 		}
 		victory_points = {
 			6989 1
 		}
-		add_core_of = ZHR
+		add_core_of = MAN
 
 		buildings = {
 			6961 = {
