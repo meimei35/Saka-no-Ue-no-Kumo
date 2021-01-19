@@ -1,0 +1,30 @@
+SRU_ministry_of_resettlement = {
+	allowed = {
+		original_tag = SRU
+	}
+	priority = 0
+	visible = {
+		has_completed_focus = RUS_resettlement_ministry
+	}
+}
+
+SRU_reintegrate_the_governorates = {
+	priority = 1
+	allowed = {
+		original_tag = SRU
+	}
+	visible = {
+		has_completed_focus = RUS_militarization_nation
+	}
+}
+
+SRU_new_course_to_the_great_russia = {
+	picture = GFX_decision_cat_picture_chi_political_support
+	priority = 2
+	allowed = {
+		original_tag = SRU
+	}
+	visible = {
+		has_completed_focus = RUS_novy_kurs
+	}
+}

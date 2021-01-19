@@ -1,0 +1,159 @@
+spriteTypes = {
+	##Icon For:
+	SpriteType = {
+		name = "GFX_born_leaders"
+		texturefile = "gfx/interface/goals/MAN/GFX_born_leaders.dds"
+	}
+	SpriteType = {
+		name = "GFX_chase_out_the_japanese"
+		texturefile = "gfx/interface/goals/MAN/GFX_chase_out_the_japanese.dds"
+	}
+	SpriteType = {
+		name = "GFX_checks_and_balances"
+		texturefile = "gfx/interface/goals/MAN/GFX_checks_and_balances.dds"
+	}
+	SpriteType = {
+		name = "GFX_contact_loyalists_at_home"
+		texturefile = "gfx/interface/goals/MAN/GFX_contact_loyalists_at_home.dds"
+	}
+	SpriteType = {
+		name = "GFX_contain_the_reds"
+		texturefile = "gfx/interface/goals/MAN/GFX_contain_the_reds.dds"
+	}
+	SpriteType = {
+		name = "GFX_demilitarise_administration"
+		texturefile = "gfx/interface/goals/MAN/GFX_demilitarise_administration.dds"
+	}
+	SpriteType = {
+		name = "GFX_end_house_arrest"
+		texturefile = "gfx/interface/goals/MAN/GFX_end_house_arrest.dds"
+	}
+	SpriteType = {
+		name = "GFX_execute_the_warlords"
+		texturefile = "gfx/interface/goals/MAN/GFX_execute_the_warlords.dds"
+	}
+	SpriteType = {
+		name = "GFX_fengtian_clique"
+		texturefile = "gfx/interface/goals/MAN/GFX_fengtian_clique.dds"
+	}
+	SpriteType = {
+		name = "GFX_follow_the_old_marshal_model"
+		texturefile = "gfx/interface/goals/MAN/GFX_follow_the_old_marshal_model.dds"
+	}
+	SpriteType = {
+		name = "GFX_hire_chinese_officers"
+		texturefile = "gfx/interface/goals/MAN/GFX_hire_chinese_officers.dds"
+	}
+	SpriteType = {
+		name = "GFX_imperial_decree"
+		texturefile = "gfx/interface/goals/MAN/GFX_imperial_decree.dds"
+	}
+	SpriteType = {
+		name = "GFX_intervene_in_the_north"
+		texturefile = "gfx/interface/goals/MAN/GFX_intervene_in_the_north.dds"
+	}
+	SpriteType = {
+		name = "GFX_invite_exiles_to_goverment"
+		texturefile = "gfx/interface/goals/MAN/GFX_invite_exiles_to_goverment.dds"
+	}
+	SpriteType = {
+		name = "GFX_invite_pariahs_of_the_kmt"
+		texturefile = "gfx/interface/goals/MAN/GFX_invite_pariahs_of_the_kmt.dds"
+	}
+	SpriteType = {
+		name = "GFX_involve_the_manchus"
+		texturefile = "gfx/interface/goals/MAN/GFX_involve_the_manchus.dds"
+	}
+	SpriteType = {
+		name = "GFX_kwantung_army_clique"
+		texturefile = "gfx/interface/goals/MAN/GFX_kwantung_army_clique.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAN_freedom"
+		texturefile = "gfx/interface/goals/MAN/GFX_MAN_freedom.dds"
+	}
+	SpriteType = {
+		name = "GFX_meritocratic_enfranchisement"
+		texturefile = "gfx/interface/goals/MAN/GFX_meritocratic_enfranchisement.dds"
+	}
+	SpriteType = {
+		name = "GFX_move_capital_to_dalian"
+		texturefile = "gfx/interface/goals/MAN/GFX_move_capital_to_dalian.dds"
+	}
+	SpriteType = {
+		name = "GFX_national_government"
+		texturefile = "gfx/interface/goals/MAN/GFX_national_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_national_unity_government"
+		texturefile = "gfx/interface/goals/MAN/GFX_national_unity_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_new_constitution"
+		texturefile = "gfx/interface/goals/MAN/GFX_new_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_north_china_governorate"
+		texturefile = "gfx/interface/goals/MAN/GFX_north_china_governorate.dds"
+	}
+	SpriteType = {
+		name = "GFX_preempt_the_south"
+		texturefile = "gfx/interface/goals/MAN/GFX_preempt_the_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_purge_the_technocrats_again" 
+		texturefile = "gfx/interface/goals/MAN/GFX_purge_the_technocrats_again.dds"
+	}
+	SpriteType = {
+		name = "GFX_reconciliation_strategy"
+		texturefile = "gfx/interface/goals/MAN/GFX_reconciliation_strategy.dds"
+	}
+	SpriteType = {
+		name = "GFX_reform_the_kenpeitai"
+		texturefile = "gfx/interface/goals/MAN/GFX_reform_the_kenpeitai.dds"
+	}
+	SpriteType = {
+		name = "GFX_reign_in_officers"
+		texturefile = "gfx/interface/goals/MAN/GFX_reign_in_officers.dds"
+	}
+	SpriteType = {
+		name = "GFX_remove_racial_restrictions"
+		texturefile = "gfx/interface/goals/MAN/GFX_remove_racial_restrictions.dds"
+	}
+	SpriteType = {
+		name = "GFX_return_home"
+		texturefile = "gfx/interface/goals/MAN/GFX_return_home.dds"
+	}
+	SpriteType = {
+		name = "GFX_seek_legitimacy"
+		texturefile = "gfx/interface/goals/MAN/GFX_seek_legitimacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_the_aristocracy"
+		texturefile = "gfx/interface/goals/MAN/GFX_the_aristocracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_the_new_blood"
+		texturefile = "gfx/interface/goals/MAN/GFX_the_new_blood.dds"
+	}
+	SpriteType = {
+		name = "GFX_the_white_terror"
+		texturefile = "gfx/interface/goals/MAN/GFX_the_white_terror.dds"
+	}
+	SpriteType = {
+		name = "GFX_three_month_campaign"
+		texturefile = "gfx/interface/goals/MAN/GFX_three_month_campaign.dds"
+	}
+	SpriteType = {
+		name = "GFX_uneasy_peace"
+		texturefile = "gfx/interface/goals/MAN/GFX_uneasy_peace.dds"
+	}
+	SpriteType = {
+		name = "GFX_unite_with_beiyang"
+		texturefile = "gfx/interface/goals/MAN/GFX_unite_with_beiyang.dds"
+	}
+	SpriteType = {
+		name = "GFX_usurp_the_republic"
+		texturefile = "gfx/interface/goals/MAN/GFX_usurp_the_republic.dds"
+	}
+}

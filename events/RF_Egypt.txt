@@ -1,0 +1,75 @@
+﻿###########################
+# Egyptian Events
+###########################
+
+add_namespace = egypt
+
+country_event = { #The Egyptian Revolt
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Disaster!
+		name = egypt.1.a
+			447 = {
+				add_core_of = YEP
+			}
+			452 = {
+				add_core_of = YEP
+			}
+			456 = {
+				add_core_of = YEP
+			}
+			YEP = {
+				set_state_owner = 447
+				set_state_controller = 447
+				set_state_owner = 452
+				set_state_controller = 452
+				set_state_owner = 456
+				set_state_controller = 456
+				declare_war_on = {
+					target = EGY
+					type = annex_everything
+				}
+				hidden_effect = {
+					load_oob = "YEP_revolt"
+				}
+			}
+		ENG = {
+			country_event = {
+				id = egypt.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Rebels threaten Egypt
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.desc
+	#picture = 
+	trigger = {
+		EGY = {
+			has_war_with = YEP
+		}
+		tag = ENG
+	}
+	fire_only_once = yes
+	
+	option = { # Intervene!
+		name = egypt.2.a
+		add_to_war = {
+			targeted_alliance  = EGY
+			enemy = YEP
+		}
+	}
+	option = { # We cannot!
+		name = egypt.2.b
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}

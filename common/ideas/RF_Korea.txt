@@ -1,0 +1,56 @@
+#####################
+#	Korea - Baba	#
+#####################
+
+ideas = {
+	country = {
+		KOR_jap_colony = {
+			picture = FRA_scw_intervention_nationalists_focus
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			modifier = {
+				conscription = -0.02
+				consumer_goods_factor = -0.05
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+		KOR_nationalists_divided = {
+			picture = generic_deal_with_the_devil
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			modifier = {
+				vanguard_socialism_drift = 0.02
+				right_authoritarianism_drift = 0.02
+			}
+		}
+		KOR_republicanism = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			modifier = {
+				social_democratism_drift = 0.02
+				conservatism_drift = 0.03
+				liberalism_drift = 0.02
+			}
+		}
+		KOR_land_lords = {
+			picture = saf_history_of_segregation_2
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			modifier = {
+				monthly_population = -0.01
+				stability_weekly_factor = -0.03
+				political_power_gain = -0.25
+			}
+		}
+	}
+}

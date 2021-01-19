@@ -1,0 +1,31 @@
+﻿l_english:
+#COUNTRY NAME#
+
+#PARTIES#
+SEN_vanguard_socialism_party:0 "FLNS"
+SEN_vanguard_socialism_party_long:0 "Front de libération nationale du Sénégal"
+SEN_libertarian_marxism_party:0 "PSR"
+SEN_libertarian_marxism_party_long:0 "Parti Socialiste Radical"
+SEN_revolutionary_anarchism_party:0 "Anarchiste"
+SEN_revolutionary_anarchism_party_long:0 "Anarchiste"
+SEN_revisionist_socialism_party:0 "Union Socialiste"
+SEN_revisionist_socialism_party_long:0 "Union Socialiste"
+SEN_social_democratism_party:0 "PS"
+SEN_social_democratism_party_long:0 "Parti Socialiste"
+SEN_liberalism_party:0 "PL"
+SEN_liberalism_party_long:0 "Parti Libéral"
+SEN_conservatism_party:0 "PL-R"
+SEN_conservatism_party_long:0 "Parti Libéral - Republicáin"
+SEN_right_authoritarianism_party:0 "PAAC"
+SEN_right_authoritarianism_party_long:0 "Parti de l'ancienne armée coloniale"
+SEN_despotism_party:0 "Despotist"
+SEN_despotism_party_long:0 "Despotist"
+SEN_reactionism_party:0 "UDM"
+SEN_reactionism_party_long:0 "Unité de Mohammed"
+SEN_accelerationism_party:0 "PNAGS (S)"
+SEN_accelerationism_party_long:0 "Parti national de l'Avant-garde Surréaliste (Sénégal)"
+#LEADER DESCRITIONS#
+#IDEAS#
+#CUSTOM TOOLTIPS AND FLAGS#
+#DECISIONS (1.5 Update)#
+#FOCUSES#

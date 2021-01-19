@@ -1,0 +1,404 @@
+capital = 978
+
+oob = "ZHR_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "ZHR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "ZHR_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+}
+### Navy - MtG ###
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+### Navy - no MtG ###
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+	}
+}
+
+set_convoys = 35
+add_ideas = {
+	ZHR_manchurians
+}
+set_politics = {
+	ruling_party = social_democratism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	vanguard_socialism = 7
+	libertarian_marxism = 8
+	revolutionary_anarchism = 10
+	revisionist_socialism = 15
+	social_democratism = 26
+	liberalism = 17
+	conservatism = 6
+	right_authoritarianism = 8
+	despotism = 1
+	reactionism = 1
+	accelerationism = 1
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	picture = "Portrait_Alexander_Kerensky.dds"
+	desc = "POLITICS_KERENSKY_DESC"
+	expire = "1965.1.1"
+	ideology = liberal_socialism
+	traits = {
+		ZHR_exile_kerensky
+	}
+}
+create_country_leader = {
+	name = "Aleksei Gastev"
+	picture = "Portrait_Gastev.tga"
+	desc = "POLITICS_GASTEV_DESC"
+	expire = "1965.1.1"
+	ideology = technocratism
+	traits = {
+		ZHR_gastev
+	}
+}
+#create_country_leader = {
+#	name = "Alisa Rosenbaum"
+#	picture = "Portrait_Alisa.tga"
+#	desc = "POLITICS_ALISA_DESC"
+#	expire = "1965.1.1"
+#	ideology = objectivism
+#	traits = {
+#		ZHR_ayn_rand
+#	}
+#}
+create_country_leader = {
+	name = "Pavel Milyukov"
+	picture = "Portrait_Pavel_Milyukov.dds"
+	desc = "POLITICS_MILYUKOV"
+	expire = "1965.1.1"
+	ideology = market_liberalism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Vasily Chapayev"
+	picture = "Chapayev.dds"
+	desc = "POLITICS_CHAPAYEV_DESC"
+	expire = "1965.1.1"
+	ideology = anarcho_communism
+	traits = {
+		ZHR_chapayev
+	}
+}
+create_country_leader = {
+	name = "Vasily Boldyrev"
+	picture = "Portrait_Vasily_Boldyrev.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = {
+		ZHR_dictator_boldyrev
+	}
+}
+
+create_country_leader = {
+	name = "Leon Trotsky"
+	picture = "Trotsky.dds"
+	desc = "POLITICS_TROTSKY_DESC"
+	expire = "1965.1.1"
+	ideology = orthodox_leninism
+	traits = {
+		ZHR_comrade_trotsky
+	}
+}
+
+create_country_leader = {
+	name = "Lev Kamenev"
+	picture = "Lev_Kamenev.dds"
+	expire = "1965.1.1"
+	ideology = council_communism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Fyodor Dan"
+	picture = "Fyodor_Dan.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	id = 9001
+	name = "Sergey Wojciechowski"
+	portrait_path = "gfx/leaders/ZHR/Sergey Wojciechowski.dds"
+	traits = { inflexible_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	id = 9002
+	name = "Viktorin Molchanov"
+	portrait_path = "gfx/leaders/ZHR/Viktorin Molchanov.dds"
+	traits = { harsh_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	id = 9003
+	name = "Leon Trotsky"
+	portrait_path = "gfx/leaders/ZHR/Trotsky_general.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	id = 9004
+	name = "Mikhail Tukhachevsky"
+	portrait_path = "gfx/leaders/ZHR/Mikhail_Tukhachevsky.dds"
+	traits = { cavalry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+
+}
+create_corps_commander = {
+	id = 9005
+	name = "Mikhail Frunze"
+	portrait_path = "gfx/leaders/ZHR/Mikhail Frunze.dds"
+	traits = { cavalry_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+
+}
+create_corps_commander = {
+	id = 9006
+	name = "Vasily Chapayev"
+	portrait_path = "gfx/leaders/ZHR/Chapayev general.dds"
+	traits = { media_personality }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+
+}
+create_corps_commander = {
+	id = 9007
+	name = "Semyon Budenny"
+	portrait_path = "gfx/leaders/ZHR/Semyon Budenny.dds"
+	traits = { old_guard }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+
+}
+create_corps_commander = {
+	id = 9008
+	name = "Boris Shaposhnikov"
+	portrait_path = "gfx/leaders/ZHR/Boris Shaposhnikov.dds"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+
+}
+create_corps_commander = {
+	id = 9009
+	name = "Vasily Boldyrev"
+	portrait_path = "gfx/leaders/ZHR/Boldyrev.dds"
+	traits = { brilliant_strategist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+
+}
+create_corps_commander = {
+	id = 9010
+	name = "Vasiliy Blyukher"
+	portrait_path = "gfx/leaders/ZHR/Vasiliy Blyukher.dds"
+	traits = { cavalry_officer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+
+}
+create_corps_commander = {
+	id = 9011
+	name = "Yuriy Sablin"
+	portrait_path = "gfx/leaders/ZHR/Yuriy Sablin.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+
+}
+#create_corps_commander = {
+#	name = "Pavel Petrov"
+#	portrait_path = "gfx/leaders/ZHR/Portrait_ZHR_Generic_land_3.dds"
+#	traits = {  }
+#	skill = 2
+#
+#}
+#create_corps_commander = {
+#	name = "Boris Fortunatov"
+#	portrait_path = "gfx/leaders/ZHR/Portrait_ZHR_Generic_land_3.dds"
+#	traits = {  }
+#	skill = 2
+#
+#}
+create_corps_commander = {
+	id = 9012
+	name = "Dmitrij Karbyshev"
+	portrait_path = "gfx/leaders/ZHR/Dmitrij Karbyshev.dds"
+	traits = { harsh_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+
+}
+create_corps_commander = {
+	id = 9013
+	name = "Pyotr Lutskov"
+	portrait_path = "gfx/leaders/ZHR/Pyotr Lutskov.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+
+}
+
+create_navy_leader = {
+	id = 9014
+	name = "Alexandr Vekman"
+	picture = "Admiral_Alexander_Vekman.dds"
+	traits = { blockade_runner arctic_water_expert }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+create_navy_leader = {
+	id = 9015
+	name = "Vladimir Orlov"
+	picture = "Admiral_Vladimir_Orlov.dds"
+	traits = { superior_tactician caustic_personality }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	id = 9016
+	name = "Andrej Maksimov"
+	picture = "Admiral_Andrey_Maximov.dds"
+	traits = { spotter old_guard_navy }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+create_navy_leader = {
+	id = 9017
+	name = "Eduard Pantserzhansky"
+	picture = "Admiral_Eduard_Pantserzhansky.dds"
+	traits = { navy_career_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	id = 9018
+	name = "Mikhail Viktorov"
+	picture = "Admiral_Mikhail_Viktorov.dds"
+	traits = { green_water_expert craven }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+1939.1.1 = {
+}

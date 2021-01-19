@@ -1,0 +1,373 @@
+# checks for these three government types for the country in scope
+has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = RF_is_socialist
+		OR = {
+			has_government = vanguard_socialism
+			has_government = revisionist_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			AND = {
+				has_government = social_democratism
+				has_country_flag = soc_dems_are_socialists
+			}
+		}
+	}
+}
+
+has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = RF_is_democratic
+		OR = {
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+		}
+	}
+}
+
+has_dictatorship_government = {
+	custom_trigger_tooltip = {
+		tooltip = RF_is_dictatorship
+		OR = {
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+		}
+	}
+}
+
+ai_air_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = naval_strike_tactics
+		has_tech = direct_ground_support
+		has_tech = low_echelon_support
+	}
+}
+
+ai_air_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = multialtitude_flying
+		has_tech = hunt_and_destroy
+		has_tech = operational_destruction
+	}
+}
+ai_air_doctrine_tier_3_trigger = {
+	OR = {
+		has_tech = flying_fortress
+		has_tech = naval_strike_torpedo_tactics
+		has_tech = infiltration_bombing
+	}
+}
+
+ai_land_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = elastic_defence
+		has_tech = mobile_defence
+		has_tech = grand_assault
+		has_tech = defence_in_depth
+	}
+}
+
+ai_land_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = kampfgruppe
+		has_tech = mechanised_offensive
+		has_tech = branch_interoperation
+		has_tech = infiltration_assault
+		has_tech = vast_offensives
+		has_tech = large_front_offensive
+	}
+}
+
+anti_submarine_strategy_required_trigger = {
+	OR = {
+		AND = {
+			tag = ENG
+			not = { is_in_faction_with = GER }
+			GER = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		AND = {
+			tag = USA
+			not = { is_in_faction_with = GER }
+			GER = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		AND = {
+			tag = JAP
+			not = { is_in_faction_with = USA }
+		}
+		AND = {
+			has_war = yes
+			any_enemy_country = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		convoy_threat > 0.3
+	}
+}
+
+has_naval_treaty_trigger = {
+	OR = {
+		#has_idea = MTG_naval_treaty_adherent
+		#has_idea = MTG_naval_treaty_cheating
+		#has_idea = MTG_naval_treaty_adherent_reduced
+		#has_idea = MTG_naval_treaty_cheating_reduced
+	}
+}
+
+is_actual_major = {
+	AND = {
+		is_major = yes
+		OR = {
+			AND = {
+				num_of_factories > 49
+				date < 1940.1.1
+			}
+			AND = {
+				num_of_factories > 74
+				NOT = { date < 1940.1.1 }
+				date < 1942.1.1
+			}
+			AND = {
+				num_of_factories > 99
+				NOT = { date < 1942.1.1 }
+				date < 1944.1.1
+			}
+			AND = {
+				num_of_factories > 124
+				NOT = { date < 1944.1.1 }
+				date < 1946.1.1
+			}
+			num_of_factories > 149
+			tag = GER
+			tag = ITA
+			tag = AUS
+			tag = FRA
+			tag = ENG
+			tag = RUS
+			tag = JAP
+			tag = USA
+		}
+	}
+}
+
+is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+	NOT = {
+		any_country_with_original_tag = {
+			original_tag_to_check = FROM
+			is_puppet_of = PREV # if already created one do not create another
+			has_autonomy_state = autonomy_collaboration_government
+		}
+	}
+}
+
+# Used to check if a nation...wait for it...uses generic concerns! Wow!
+uses_generic_concerns = {
+	NOT = {
+		original_tag = ENG
+		#original_tag = FRA
+	}
+}
+
+needs_cheap_infantry = { #For countries usually in a civil war
+}
+
+
+
+# Can be used in any country scope (to ensure the country has no owned state which it doesn't control)
+controls_all_owned_states = {
+	custom_trigger_tooltip = {
+		tooltip = controls_all_states
+		NOT = {
+			any_owned_state = {
+				NOT = { is_controlled_by = PREV }
+				impassable = no
+			}
+		}
+	}
+}
+
+# Checks if the country is in a faction or a puppet
+is_ally_of_ROOT = {
+	custom_trigger_tooltip = {
+		tooltip = RF_is_an_ally
+		NOT = { tag = ROOT }
+		exists = yes
+		OR = {
+			is_in_faction_with = ROOT
+			is_subject_of = ROOT
+			ROOT = { is_subject_of = PREV }
+		}
+	}
+}
+
+is_ally_of_PREV = {
+	custom_trigger_tooltip = {
+		tooltip = RF_is_an_ally
+		NOT = { tag = PREV }
+		exists = yes
+		OR = {
+			is_in_faction_with = PREV
+			is_subject_of = PREV
+			PREV = { is_subject_of = PREV }
+		}
+	}
+}
+
+# Can be used in state scope, to check if the owner is ROOT or a subject of ROOT
+is_owned_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = RF_owned_by_ROOT_or_subject
+		owner = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+# Can be used in state scope, to check if the owner is ROOT or an ally/subject of ROOT
+is_owned_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = RF_owned_by_ROOT_or_ally
+		owner = {
+			is_ally_with = ROOT
+		}
+	}
+}
+
+is_owned_by_ROOT_or_war_ally = {
+	owner = {
+		OR = {
+			tag = ROOT
+			is_subject_of = ROOT
+			is_in_faction_with = ROOT
+			has_war_together_with = ROOT
+		}
+	}
+}
+
+# Can be used in state scope, to check if the controller (not owner) is ROOT or a subject of ROOT
+is_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = RF_controlled_by_ROOT_or_subject
+		controller = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+# Can be used in state scope, to check if the controller (not owner) is ROOT or ally/subject of ROOT
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = RF_controlled_by_ROOT_or_ally
+		controller = {
+			is_ally_with = ROOT
+		}
+	}
+}
+
+# Can be used in state scope, to check if the owner and controller is ROOT or a subject of ROOT
+is_owned_and_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = RF_owned_and_controlled_by_ROOT_or_subject
+		owner = {
+			controls_state = PREV
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+# Can be used in state scope, to check if the owner and controller is ROOT or a subject of ROOT
+is_owned_and_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = RF_owned_and_controlled_by_ROOT_or_ally
+		owner = {
+			controls_state = PREV
+			is_ally_with = ROOT
+		}
+	}
+}
+
+is_actual_neighbor_of_ROOT_or_ally = {
+	any_neighbor_country = {
+		is_owner_neighbor_of = PREV
+		is_ally_with = ROOT
+	}
+}
+
+# Used to check whether a country is eligible for peace deal events
+is_valid_peace_target = {
+	is_subject = no
+	OR = {
+		is_in_faction = no
+		is_faction_leader = yes
+	}
+}
+
+# in state scope
+is_claim_or_core_of_ROOT = {
+	OR = {
+		is_claimed_by = ROOT
+		is_core_of = ROOT
+	}
+}
+
+is_claim_or_core_of_FROM = {
+	OR = {
+		is_claimed_by = FROM
+		is_core_of = FROM
+	}
+}
+
+is_not_claim_or_core_of_ROOT = {
+	NOT = {
+		is_claimed_by = ROOT
+		is_core_of = ROOT
+	}
+}
+
+is_not_claim_or_core_of_FROM = {
+	NOT = {
+		is_claimed_by = FROM
+		is_core_of = FROM
+	}
+}
+
+is_claim_or_core_of_PREV = {
+	OR = {
+		is_claimed_by = PREV
+		is_core_of = PREV
+	}
+}
+
+is_not_claim_or_core_of_PREV = {
+	NOT = {
+		is_claimed_by = PREV
+		is_core_of = PREV
+	}
+}
+
+has_coalition = {
+	has_variable = coalition_partners^num
+}

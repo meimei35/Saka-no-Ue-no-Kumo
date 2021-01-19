@@ -1,0 +1,9 @@
+MOL_terrorism_category = {
+	allowed = {
+		original_tag = MOL
+	}
+	priority = 300
+	visible = {
+		#has_completed_focus = MOL_terrorist_state
+	}
+}

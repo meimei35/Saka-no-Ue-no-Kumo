@@ -1,0 +1,764 @@
+#TSARINASETERNALREIGN
+
+focus_tree = {
+
+	id = rus_mladorossi_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = RUS
+		}
+	}
+	continuous_focus_position = { x = 5800 y = 1000 }
+	shared_focus = RUS_anewrussianarmy
+	shared_focus = RUS_transpolarflights
+	shared_focus = RUS_expandpetrogradnavalacademy
+
+	default = no
+
+	focus = {
+		id = RUS_union_of_young_russia
+		icon = GFX_focus_RUS_union_of_young_russia
+		available = {
+		}
+		bypass = {
+		}
+		x = 37
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = accelerationism
+				popularity = 0.12
+			}
+		}
+	}
+	focus = {
+		id = RUS_crown_a_tsaritsa
+		icon = GFX_focus_RUS_crown_a_tsaritsa
+		prerequisite = {
+			focus = RUS_union_of_young_russia
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_union_of_young_russia
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Anastasia I"
+				desc = "POLITICS_VYACHESLAV_MOLOTOV_DESC"
+				picture = "Portrait_Russia_Anastasia_Romanova.tga"
+				expire = "1965.1.1"
+				ideology = national_rejuvenatism
+				traits = {
+
+				}
+			}
+			country_event = {
+				id = news.29
+				days = 2
+			}
+		}
+	}
+	focus = {
+		id = RUS_mladorossi_constitution
+		icon = GFX_focus_RUS_mladorossi_constitution
+		prerequisite = {
+			focus = RUS_crown_a_tsaritsa
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_crown_a_tsaritsa
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			remove_ideas = RUS_revolting_peasants
+		}
+	}
+
+	focus = {
+		id = RUS_nationalize_industry
+		icon = GFX_focus_RUS_nationalize_industry
+		prerequisite = {
+			focus = RUS_mladorossi_constitution
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_mladorossi_constitution
+		x = -5
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			219 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			195 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_vsnkh
+		icon = GFX_focus_RUS_vsnkh
+		prerequisite = {
+			focus = RUS_nationalize_industry
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_nationalize_industry
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_the_vsnkh
+			remove_ideas = RUS_civil_war_damage
+			hidden_effect = {
+				remove_ideas = RUS_civil_war_damage1
+			}
+		}
+	}
+	focus = {
+		id = RUS_conduct_private_companies
+		icon = GFX_focus_RUS_conduct_private_companies
+		prerequisite = {
+			focus = RUS_nationalize_industry
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_nationalize_industry
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			remove_ideas = monopolized_industry
+		}
+	}
+	focus = {
+		id = RUS_prioritize_heavy_industry
+		icon = GFX_focus_RUS_prioritize_heavy_industry
+		prerequisite = {
+			focus = RUS_nationalize_industry
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_nationalize_industry
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_patriotic_worker_unions
+		icon = GFX_focus_RUS_patriotic_worker_unions
+		prerequisite = {
+			focus = RUS_vsnkh
+		}
+		prerequisite = {
+			focus = RUS_conduct_private_companies
+		}
+		prerequisite = {
+			focus = RUS_prioritize_heavy_industry
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_nationalize_industry
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_patriotic_workers
+			remove_ideas = RUS_post_war_famine
+			hidden_effect = {
+				remove_ideas = RUS_post_war_famine1
+			}
+		}
+	}
+	focus = {
+		id = RUS_antitrust_law
+		icon = GFX_focus_RUS_antitrust_law
+		prerequisite = {
+			focus = RUS_patriotic_worker_unions
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_patriotic_worker_unions
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_antitrust_law
+		}
+	}
+	focus = {
+		id = RUS_progressive_tax
+		icon = GFX_focus_RUS_progressive_tax
+		prerequisite = {
+			focus = RUS_antitrust_law
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_antitrust_law
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_progressive_taxes
+		}
+	}
+	focus = {
+		id = RUS_peoples_fortune
+		icon = GFX_focus_RUS_peoples_fortune
+		prerequisite = {
+			focus = RUS_progressive_tax
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_progressive_tax
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			remove_ideas = RUS_patriotic_workers
+			remove_ideas = RUS_progressive_taxes
+			remove_ideas = RUS_antitrust_law
+			add_ideas = RUS_peoples_fortune
+		}
+	}
+
+	focus = {
+		id = RUS_federalist_monarchy
+		icon = GFX_focus_RUS_federalist_monarchy
+		prerequisite = {
+			focus = RUS_mladorossi_constitution
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_mladorossi_constitution
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			remove_ideas = unstable_political_system
+		}
+	}
+
+	focus = {
+		id = RUS_anastasia_the_great
+		icon = GFX_focus_RUS_anastasia_the_great
+		prerequisite = {
+			focus = RUS_federalist_monarchy
+		}
+		mutually_exclusive = {
+			focus = RUS_anastasia_the_terrible
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_federalist_monarchy
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_the_great
+		}
+	}
+	focus = {
+		id = RUS_anastasia_the_terrible
+		icon = GFX_focus_RUS_anastasia_the_terrible
+		prerequisite = {
+			focus = RUS_federalist_monarchy
+		}
+		mutually_exclusive = {
+			focus = RUS_anastasia_the_great
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_federalist_monarchy
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_the_terrible
+		}
+	}
+
+	focus = {
+		id = RUS_establish_peoples_oprichnina
+		icon = GFX_focus_RUS_establish_peoples_oprichnina
+		prerequisite = {
+			focus = RUS_anastasia_the_great
+			focus = RUS_anastasia_the_terrible
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_federalist_monarchy
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_peoples_oprichnina
+			hidden_effect = {
+				country_event = {
+					id = russia.25
+					days = 40
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_media_coverage
+		icon = GFX_focus_RUS_media_coverage
+		prerequisite = {
+			focus = RUS_establish_peoples_oprichnina
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_establish_peoples_oprichnina
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_media_coverage
+		}
+	}
+	focus = {
+		id = RUS_tsaritsa_and_soviets
+		icon = GFX_focus_RUS_tsaritsa_and_soviets
+		prerequisite = {
+			focus = RUS_media_coverage
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_media_coverage
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = RUS_national_champions
+		icon = GFX_focus_RUS_national_champions
+		prerequisite = {
+			focus = RUS_establish_peoples_oprichnina
+			focus = RUS_patriotic_worker_unions
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_establish_peoples_oprichnina
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_national_champions
+		}
+	}
+	focus = {
+		id = RUS_molodaya_gvardyia
+		icon = GFX_focus_RUS_molodaya_gvardyia
+		prerequisite = {
+			focus = RUS_establish_peoples_oprichnina
+		}
+		prerequisite = {
+			focus = RUS_messianistic_nationalism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_establish_peoples_oprichnina
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_molodaya_gvardyia
+		}
+	}
+
+	focus = {
+		id = RUS_new_russian_man
+		icon = GFX_focus_RUS_new_russian_man
+		prerequisite = {
+			focus = RUS_mladorossi_constitution
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_mladorossi_constitution
+		x = 5
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = {
+				RUS_new_russian_man
+			}
+		}
+	}
+	focus = {
+		id = RUS_expand_education
+		icon = GFX_focus_RUS_expand_education
+		prerequisite = {
+			focus = RUS_new_russian_man
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_new_russian_man
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = RUS_mladorossi_education
+		}
+	}
+	focus = {
+		id = RUS_state_universities
+		icon = GFX_focus_RUS_state_universities
+		prerequisite = {
+			focus = RUS_new_russian_man
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_new_russian_man
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = RUS_messianistic_nationalism
+		icon = GFX_focus_RUS_messianistic_nationalism
+		prerequisite = {
+			focus = RUS_expand_education
+		}
+		prerequisite = {
+			focus = RUS_state_universities
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_new_russian_man
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_new_russian_man
+				add_idea = RUS_new_russian_man1
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = RUS_patriotic_councils
+		icon = GFX_focus_RUS_patriotic_councils
+		prerequisite = {
+			focus = RUS_messianistic_nationalism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_messianistic_nationalism
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = accelerationism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = RUS_concile_ethnicities_of_union
+		icon = GFX_focus_RUS_concile_ethnicities_of_union
+		prerequisite = {
+			focus = RUS_patriotic_councils
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_patriotic_councils
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = accelerationism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = RUS_popular_monarchism
+		icon = GFX_focus_RUS_popular_monarchism
+		prerequisite = {
+			focus = RUS_concile_ethnicities_of_union
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_concile_ethnicities_of_union
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = RUS_unify_the_empire
+		icon = GFX_focus_RUS_unify_the_empire
+		prerequisite = {
+			focus = RUS_peoples_fortune
+		}
+		prerequisite = {
+			focus = RUS_tsaritsa_and_soviets
+		}
+		prerequisite = {
+			focus = RUS_popular_monarchism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		relative_position_id = RUS_tsaritsa_and_soviets
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks decisions to integrate warlords."
+		}
+	}
+}

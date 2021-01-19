@@ -1,0 +1,823 @@
+
+ideas = {
+	country = {
+		
+		JAP_yasuhito = {
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				army_org_factor = 0.10
+				justify_war_goal_time = -0.25
+				political_power_gain = -0.1
+			}
+		}
+		
+		JAP_instability = {
+			picture = generic_disjointed_gov
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.5
+			}
+		}
+		
+		JAP_inequality = {
+			picture = FRA_scw_intervention_republicans_focus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.02
+				stability_factor = -0.05
+				
+			}
+		}
+		
+		JAP_rural_backwater = {
+			picture = prc_low_popular_support2
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = -0.5
+				conscription_factor = 0.01
+			}
+		}
+		
+		JAP_zaib_dominion = {
+			picture = jap_zaibatsu
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				min_export = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		
+		JAP_divided_military_army = {
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				#
+			}
+		}
+		
+		JAP_divided_military_navy = {
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				#				
+			}
+		}
+		
+		JAP_sunset_crash = {
+			removal_cost = -1
+			picture = JAP_sunset_crash
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.3
+			}
+		}
+		
+		JAP_three_month_camp = {
+			picture = FRA_national_mobilization_focus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				war_support_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = BYJ
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.1
+			}
+		}
+		
+		JAP_tributary_act = {
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.1
+			}
+		}
+		
+		JAP_litigation_blockade = {
+			picture = generic_spy_intel
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		JAP_bail_out = {
+			picture = jap_zaibatsu_ally
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		JAP_big_four = {
+			picture = man_five_year_plan_industry
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		
+		JAP_business_palace = {
+			picture = received_attache
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		
+		JAP_zaibatsu_mic = {
+			picture = jap_zaibatsu
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain  = -0.15
+				production_speed_arms_factory_factor = 0.25
+				industrial_capacity_factory = 0.2
+			}
+		}
+		
+		JAP_reform_economy = {
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		JAP_worker_coop = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		JAP_trial_zaib = {
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		JAP_dismantled_zaib = {
+			picture = jap_zaibatsu_control
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				political_power_gain = 0.25
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = 0.25
+			}
+		}
+		
+		JAP_wartime_prep = {
+			picture = can_wartime_prices_and_trade_board
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		JAP_economic_miracle = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+		
+		JPR_general_strikes = {
+			picture = FRA_factory_strikes
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				political_power_gain = 0.15
+			}
+		}
+		
+		JPR_roads = {
+			picture = generic_build_infrastructure
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				industry_repair_factor = 0.25
+			}
+		}
+		
+		JPR_mantetsu = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		JAP_cabinet = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		
+		JAP_cabinet2 = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				political_power_gain = 0.50
+			}
+		}
+		
+		JAP_hegemony = {
+			picture = JAP_hegemony
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				justify_war_goal_time = -0.5
+			}
+		}
+		
+		JAP_bamboo = {
+			picture = prc_low_popular_support2
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = 0.03
+			}
+		}
+		
+		JAP_samurai_code = {
+			picture = jap_militarism_shogun
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.03
+				political_power_gain = 0.25
+			}
+		}
+		
+		JAP_army_loyalty = {
+			picture = generic_manpower_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				army_org_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		JAP_army_loyalty_no_sadao = {
+			picture = generic_manpower_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		JAP_loose_regs = {
+			picture = generic_local_self_management
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		
+		JAP_frozen_banks = {
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+		
+		JAP_sunrise_kingdom = {
+			picture = idea_jap_militarism_showa
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				political_power_gain = 0.25
+			}
+		}
+		
+		JAP_colonial_incentives = {
+			picture = generic_foreign_capital
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		JAP_idea_airforce_army_intergration = {
+			picture = JAP_idea_airforce_army_intergration
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				air_cas_present_factor = 0.2
+			}
+		}
+		
+		JAP_idea_SNLF = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				special_forces_cap = 2
+				invasion_preparation = -0.1
+			}
+		}
+
+		JAP_idea_50_destroyers_program_mtg = {
+			picture = generic_navy_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+				}
+			}
+			modifier = {
+				production_cost_max_ship_hull_light = -0.1
+			}
+		}
+		
+		JAP_colonial_management = {
+			picture = MEX_callistas
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				non_core_manpower = 0.05
+			}
+		}
+		
+		JAP_abolished_zaibs = {
+			picture = ijap_zaibatsu_control
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				min_export = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		JAP_champions_day = {
+			picture = FRA_national_mobilization_focus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_weekly_factor = 0.02
+			}
+		}
+		
+		JAP_investigation = {
+			picture = generic_spy_coup
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				
+				min_export = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		
+		JAP_lotus_act = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				min_export = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+		
+		JAP_crackdown = {
+			picture = ast_classify_aliens
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = -0.25
+			}
+		}
+		
+		JAP_newhighcommand = {
+			picture = general_staff
+			removal_cost = -1
+			allowed = {
+				original_tag = MON
+			}
+			modifier = {
+				war_support_factor = 0.15
+				chief_of_staff_cost_factor = -0.25
+			}
+		}
+		
+		JAP_pacify_military = {
+			picture = generic_manpower_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = MON
+			}
+			modifier = {
+				max_command_power = 25
+				command_power_gain = 0.25
+			}
+		}
+		
+		JAP_war_machine = {
+			picture = man_five_year_plan_industry
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		JAP_ai_buff = {
+			allowed = {
+				OR = {
+					original_tag = JAP
+					original_tag = JPR
+				}
+				is_ai = yes
+			}
+			cancel = {
+				is_ai = no
+			}
+			modifier = {
+				offence = 2
+				defence = 2
+				army_org_factor = 2
+				planning_speed = 2
+				army_speed_factor = 2
+				stability_factor = 0.3
+				war_support_factor = 0.3
+			}
+		}
+	}
+	
+##################Gov't################################
+
+	head_of_government = {
+		JAP_sadao_araki_hog = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_completed_focus = JAP_elevate_sadao
+			}
+			traits = { 
+				head_of_government
+				hog_old_general
+			}
+		}
+		JAP_seigo_nakano_hog = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_government = reactionism
+			}
+			traits = { 
+				head_of_government
+				hog_local_tyrant
+			}
+		}
+		JAP_okada_keisuke_hog = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			
+			}
+			traits = { 
+				head_of_government
+				hog_old_admiral
+			}
+		}
+		JAP_koki_hirota_hog = {	#STARTING#
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			
+			}
+			traits = { 
+				head_of_government
+				hog_pragmatic_statesman
+			}
+		}
+		JAP_fumimaro_konoe_hog = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				
+			}
+			traits = { 
+				head_of_government
+				hog_local_tyrant
+			}
+		}
+	}
+	foreign_minister = {
+		JAP_teijiro_toyoda_for = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				foreign_minister
+				for_biased_intellectual
+			}
+		}
+		JAP_kijuro_shidehara_for = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				foreign_minister
+				for_apologetic_clerk
+			}
+		}
+		JAP_yosuke_matsuoka_for = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				foreign_minister
+				for_ideological_crusader
+			}
+		}
+		
+	}
+	economy_minister = {
+		JAP_machida_chuji_eco = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				economy_minister
+				eco_balanced_budget_economy
+			}
+		}
+		JAP_gotaro_ogawa_eco = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				economy_minister
+				eco_laissez_faire_capitalist
+			}
+		}
+		JAP_gujiro_fujiwara_eco = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				economy_minister
+				eco_reformer
+			}
+		}
+	}
+	security_minister = {
+		JAP_X_sec = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				security_minister
+				sec_prince_of_terror
+			}
+		}
+	}
+	head_of_intel = {
+		JAP_X_int = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				head_of_intel
+				int_logistics_specialist
+			}
+		}
+	}
+	#Military
+	chief_of_staff = {
+		JAP_araki_cos = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				if = {
+					limit = {
+						has_government = despotism
+					}
+					NOT = {
+						OR = {
+							has_completed_focus = JAP_arrest_sadao
+							has_completed_focus = JAP_execute_sadao
+						}
+					}
+				}
+			}
+			traits = { 
+				cos_school_of_psychology
+			}
+		}
+	}
+	chief_of_army = {
+		JAP_cao = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+	chief_of_navy = {
+		JAP_fushimi_hiroyasu_con = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				navy_chief_decisive_battle_2
+			}
+		}
+	}
+	chief_of_air_force = {
+		JAP_caof = {
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { 
+				air_chief_ground_support_2
+			}
+		}
+	}
+}

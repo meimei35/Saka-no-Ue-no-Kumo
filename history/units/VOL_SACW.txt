@@ -1,0 +1,143 @@
+division_template = {
+	name = "Boer Infantry"				
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Boer Commandos"			
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Boer Cavalry"
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Leger van Boere #####
+	division= {	
+		#name = "1ste Transvaalse Afdeling"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13286 # Transvaal
+		division_template = "Boer Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "2de Transvaal Afdeling"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13289 # Transvaal
+		division_template = "Boer Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "1 Oranje Afdeling"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12064  # Oranje
+		division_template = "Boer Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "3de Transvaalafdeling"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4696 # Transvaal
+		division_template = "Boer Commandos"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "2de Oranje Afdeling"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13281 # Oranje
+		division_template = "Boer Commandos"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "1ste Kavalierafdeling"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10400 # Pretoria
+		division_template = "Boer Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	##### No Naval OOB #####
+}
+
+air_wings = {
+	###Boer Air Force
+	275 = {
+		# Stolen SAAF Fighter Squadron -- Hawker Furys
+		fighter_equipment_0 =  {
+			owner = "VOL" 
+			amount = 30
+		}
+	}
+}
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "VOL"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+}

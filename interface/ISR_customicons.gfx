@@ -1,0 +1,107 @@
+spriteTypes = { 
+##Icon For: 1307913
+ SpriteType = { 
+ name = "GFX_thesterngang" 
+ texturefile = "gfx/interface/goals/ISR/GFX_thesterngang.tga" 
+ }##Icon For: 1308424
+ SpriteType = { 
+ name = "GFX_unionofcultures" 
+ texturefile = "gfx/interface/goals/ISR/GFX_unionofcultures.tga" 
+ }##Icon For: 1308422
+ SpriteType = { 
+ name = "GFX_onepeopleinzion" 
+ texturefile = "gfx/interface/goals/ISR/GFX_onepeopleinzion.tga" 
+ }##Icon For: 1307876
+ SpriteType = { 
+ name = "GFX_coordinatethemillitias" 
+ texturefile = "gfx/interface/goals/ISR/GFX_coordinatethemillitias.tga" 
+ }##Icon For: 1307893
+ SpriteType = { 
+ name = "GFX_thehaganahjoins" 
+ texturefile = "gfx/interface/goals/ISR/GFX_thehaganahjoins.tga" 
+ }##Icon For: 1307901
+ SpriteType = { 
+ name = "GFX_defenceoftheyishuv" 
+ texturefile = "gfx/interface/goals/ISR/GFX_defenceoftheyishuv.tga" 
+ }##Icon For: 1307905
+ SpriteType = { 
+ name = "GFX_mainstreamhebrew" 
+ texturefile = "gfx/interface/goals/ISR/GFX_mainstreamhebrew.tga" 
+ }##Icon For: 1307906
+ SpriteType = { 
+ name = "GFX_benyehudaaproach" 
+ texturefile = "gfx/interface/goals/ISR/GFX_benyehudaaproach.tga" 
+ }##Icon For: 1307907
+ SpriteType = { 
+ name = "GFX_preserveyiddishladinoandaramaic" 
+ texturefile = "gfx/interface/goals/ISR/GFX_preserveyiddishladinoandaramaic.tga" 
+ }##Icon For: 1307912
+ SpriteType = { 
+ name = "GFX_therevisionistzionistsplit" 
+ texturefile = "gfx/interface/goals/ISR/GFX_therevisionistzionistsplit.tga" 
+ }##Icon For: 1307874
+ SpriteType = { 
+ name = "GFX_fightforthezionistcause" 
+ texturefile = "gfx/interface/goals/ISR/GFX_fightforthezionistcause.tga" 
+ }##Icon For: 1307896
+ SpriteType = { 
+ name = "GFX_lehiirgunoperations" 
+ texturefile = "gfx/interface/goals/ISR/GFX_lehiirgunoperations.tga" 
+ }##Icon For: 1307915
+ SpriteType = { 
+ name = "GFX_theisraeliconscriptionlaws" 
+ texturefile = "gfx/interface/goals/ISR/GFX_theisraeliconscriptionlaws.tga" 
+ }##Icon For: 1307920
+ SpriteType = { 
+ name = "GFX_democracyestablished" 
+ texturefile = "gfx/interface/goals/ISR/GFX_democracyestablished.tga" 
+ }##Icon For: 1435755
+ SpriteType = { 
+ name = "GFX_asternruleinzion" 
+ texturefile = "gfx/interface/goals/ISR/GFX_asternruleinzion.tga" 
+ }##Icon For: 1435759
+ SpriteType = { 
+ name = "GFX_einsteinarrivesfromgermany" 
+ texturefile = "gfx/interface/goals/ISR/GFX_einsteinarrivesfromgermany.tga" 
+ }##Icon For: 1435760
+ SpriteType = { 
+ name = "GFX_jabotinskytakesover" 
+ texturefile = "gfx/interface/goals/ISR/GFX_jabotinskytakesover.tga" 
+ }##Icon For: 1441595
+ SpriteType = { 
+ name = "GFX_bengurionascendstopower" 
+ texturefile = "gfx/interface/goals/ISR/GFX_bengurionascendstopower.tga" 
+ } 
+	spriteType = {
+		name = "GFX_idea_taas"
+		texturefile = "gfx/interface/ministers/ISR/taas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_rothschildcompany"
+		texturefile = "gfx/interface/ministers/ISR/rothscild.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_dori"
+		texturefile = "gfx/interface/ministers/ISR/ISR_dori.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_sternchief"
+		texturefile = "gfx/interface/ministers/ISR/ISR_stern.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_dayan"
+		texturefile = "gfx/interface/ministers/ISR/ISR_dayan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_golda_foreign"
+		texturefile = "gfx/interface/ministers/ISR/ISR_meir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_gurion_foreign"
+		texturefile = "gfx/interface/ministers/ISR/ISR_gurion.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_shamir_foreign"
+		texturefile = "gfx/interface/ministers/ISR/ISR_shamir.tga"
+	}
+ }

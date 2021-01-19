@@ -1,0 +1,119 @@
+music = {
+	name = "Tchaikovsky_Marche_Slave"
+	file = "Tchaikovsky_Marche_Slave_pt1.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Gustav_Holst_Mars"
+	file = "Gustav_Holst_Mars.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Warszawianka"
+	file = "Warszawianka.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Vocalistas_Tropicais_OU_VAI_OU_RACHA"
+	file = "Vocalistas_Tropicais_OU_VAI_OU_RACHA.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Vocalistas_Tropicais_A_VOZ_DO_MORRO"
+	file = "Vocalistas_Tropicais_A_VOZ_DO_MORRO.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Alexander_Mosolov_The_Iron_Foundry"
+	file = "Alexander_Mosolov_The_Iron_Foundry.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "The_Cossacks_song"
+	file = "The_Cossacks_song.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Oy_u_luzi_chevona_kalyna"
+	file = "Oy_u_luzi_chevona_kalyna.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Tamri_Shoror_Muradian_Ensemble"
+	file = "Tamri_Shoror_Muradian_Ensemble.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Arthur_Honegger_Pacific_231"
+	file = "Arthur_Honegger_Pacific_231.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Khachaturian_Masquerade_Suite_Waltz"
+	file = "Khachaturian_Masquerade_Suite_Waltz.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Edgard_Varese_Ionisation"
+	file = "Edgard_Varese_Ionisation.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Gustav_Holst_Venus"
+	file = "Gustav_Holst_Venus.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Stravinsky_Dance_of_Kashchei"
+	file = "Stravinsky_Dance_of_Kashchei.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Tchaikovsky_Marche_Slave_part_2"
+	file = "Tchaikovsky_Marche_Slave_part_2.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Rachmaninov_The_Isle_of_the_Dead"
+	file = "Rachmaninov_The_Isle_of_the_Dead.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Edgard_Varese_Deserts_1st_interpolation"
+	file = "Edgard_Varese_Deserts_1st_interpolation.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "George_Antheil_Symphony_No_3_Allegro"
+	file = "George_Antheil_Symphony_No_3_Allegro.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "George_Antheil_Symphony_No_3_Back_to_Baltimore"
+	file = "George_Antheil_Symphony_No_3_Back_to_Baltimore.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "George_Antheil_Capital_of_the_World_Suite"
+	file = "George_Antheil_Capital_of_the_World_Suite.ogg"
+	volume = 0.65
+}

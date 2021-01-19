@@ -1,0 +1,963 @@
+###########################
+# News Events
+###########################
+
+add_namespace = news
+
+country_event = {
+	id = news.intro
+	title = news.intro.t
+	desc = news.intro.d
+	picture = GFX_report_event_headless_statue
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = news.intro.a
+		country_event = news.1
+	}
+	option = {
+		name = news.intro.b
+		country_event = news.2
+	}
+	option = {
+		name = news.intro.c
+		country_event = news.3
+	}
+}
+
+country_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_report_event_headless_statue
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = news.1.a
+	}
+}
+
+country_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_report_event_headless_statue
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = news.2.a
+	}
+}
+
+country_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_report_event_headless_statue
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = news.3.a
+	}
+}
+# French National Council
+#news_event = {
+#	id = news.4
+#	title = news.4.t
+#	desc = news.4.d
+#	picture = GFX_news_event_001
+#	
+#	major = yes
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = news.4.a
+#	trigger = {
+#			NOT = {
+#				TAG = FRA
+#			}
+#		}
+#	}
+#	option = {
+#		name = news.4.b
+#		trigger = { TAG = FRA }
+#	}
+#}
+
+# The Fall of Calais
+#news_event = {
+#	id = news.5
+#	title = news.5.t
+#	desc = news.5.d
+#	picture = GFX_news_event_fall_of_calais
+#	
+#	fire_only_once = yes
+#	major = yes
+#	
+#	trigger = {
+#		938 = { is_controlled_by = FRA }
+#		938 = { is_owned_by = ENG }
+#		FRA = { has_war_with = ENG }
+#	}
+#	
+#	immediate = {
+#		set_global_flag = fall_of_calais
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+#	
+#	option = {
+#		name = news.5.a
+#		trigger = {
+#			NOT = {
+#				TAG = ENG
+#				TAG = FRA
+#			}
+#		}
+#	}
+#	option = {
+#		name = news.5.b
+#		trigger = { TAG = ENG }
+#	}
+#	option = {
+#		name = news.5.c
+#		trigger = { TAG = FRA }
+#	}
+#}
+# France seizes Wallonia
+#news_event = {
+#	id = news.6
+#	title = news.6.t
+#	desc = news.6.d
+#	picture = GFX_news_event_fall_of_calais
+#	
+#	major = yes
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = news.6.a
+#		trigger = {
+#			NOT = {
+#				has_government = accelerationism
+#			}
+#		}
+#	}
+#	option = {
+#		name = news.6.b
+#		trigger = { has_government = accelerationism }
+#	}
+#}
+# France fails to seize Wallonia
+#news_event = {
+#	id = news.7
+#	title = news.7.t
+#	desc = news.7.d
+#	picture = GFX_news_event_fall_of_calais
+#	
+#	major = yes
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = news.7.a
+#		trigger = {
+#			NOT = {
+#				has_government = accelerationism
+#			}
+#		}
+#	}
+#	option = {
+#		name = news.7.b
+#		trigger = { has_government = accelerationism }
+#	}
+#}
+# Brazil falls to Anarchy
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_king_speech
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	major = yes
+	
+	option = {
+		name = news.8.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = BRA_brazil_collapse_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "brazil_super"
+		}
+	}
+}
+#The Hobbit
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.desc
+	picture = GFX_news_event_Hobbit
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = news.9.a
+
+	}
+	
+}
+#Japanese civil war erupts
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.desc
+	picture = GFX_report_JAP_drama_on_deck_wider
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.10.a
+		trigger = { 
+			NOT = {
+				tag = JAP
+				tag = JPR
+			}
+		}
+	}
+}
+
+#Famine in Zheltorossiya
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.desc
+	picture = GFX_report_ZHR_famine_news
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.11.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = SRU
+					original_tag = DKB
+					original_tag = WRU
+					original_tag = ORE
+					original_tag = SIB
+					original_tag = KCK
+				}
+			}
+		}
+	}
+	option = {
+		name = news.11.b
+		trigger = {
+			OR = {
+				original_tag = RUS
+				original_tag = SRU
+				original_tag = DKB
+				original_tag = WRU
+				original_tag = ORE
+				original_tag = SIB
+				original_tag = KCK
+			}
+		}
+	}
+}
+
+#USA - republicans
+news_event = {
+	id = news.16
+	title = news.16.t
+	desc = news.16.desc
+	picture = GFX_report_USA_election
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.16.a
+	}
+}
+
+#USA - americans
+news_event = {
+	id = news.17
+	title = news.17.t
+	desc = news.17.desc
+	picture = GFX_report_USA_election
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.17.a
+	}
+}
+
+#USA - jobless progressives
+news_event = {
+	id = news.18
+	title = news.18.t
+	desc = news.18.desc
+	picture = GFX_report_USA_election
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.18.a
+	}
+}
+
+#USA - technocrats
+news_event = {
+	id = news.19
+	title = news.19.t
+	desc = news.19.desc
+	picture = GFX_report_USA_election
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.19.a
+	}
+}
+
+#Hamburg Dock Strike
+news_event = {
+	id = news.20
+	title = news.20.t
+	desc = news.20.desc
+	picture = GFX_report_GER_hamburg_strike
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.20.a
+		trigger = { 
+			has_government = vanguard_socialism
+		}
+	}
+	option = {
+		name = news.20.b
+		trigger = { 
+			OR = {
+				has_government = libertarian_marxism
+				has_government = revisionist_socialism
+			}
+		}
+	}
+	option = {
+		name = news.20.c
+		trigger = { 
+			has_government = revolutionary_anarchism
+		}
+	}
+	option = {
+		name = news.20.d
+		trigger = { 
+			OR = {
+				has_government = social_democratism
+				has_government = liberalism
+				has_government = conservatism
+			}
+		}
+	}
+	option = {
+		name = news.20.e
+		trigger = { 
+			OR = {
+				has_government = right_authoritarianism
+				has_government = despotism
+				has_government = reactionism
+			}
+		}
+	}
+	option = {
+		name = news.20.f
+		trigger = { 
+			has_government = accelerationism
+		}
+	}
+}
+
+#Assasination of Kolchak
+news_event = {
+	id = news.21
+	title = news.21.t
+	desc = news.21.desc
+	picture = GFX_report_RUS_kolchak_is_ded
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.21.a
+		trigger = { 
+			OR = {
+				has_government = reactionism
+				has_government = right_authoritarianism
+				has_government = despotism
+				has_government = conservatism
+			}
+		}
+	}
+	option = {
+		name = news.21.b
+		trigger = { 
+			NOT = {
+				OR = {
+					has_government = reactionism
+					has_government = right_authoritarianism
+					has_government = despotism
+					has_government = conservatism
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.22
+	title = news.22.t
+	desc = news.22.desc
+	picture = GFX_news_mag_futurism
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.22.a
+		trigger = { 
+			OR = {
+				has_government = libertarian_marxism
+				has_government = revolutionary_anarchism
+				has_government = vanguard_socialism
+				has_government = revisionist_socialism
+			}
+		}
+	}
+	option = {
+		name = news.22.b
+		trigger = { 
+				OR = {
+					has_government = liberalism
+					has_government = social_democratism
+					has_government = conservatism
+					has_government = right_authoritarianism
+				}
+		}
+	}
+	option = {
+		name = news.22.c
+		trigger = { 
+				OR = {
+					has_government = despotism
+					has_government = reactionism
+				}
+		}
+	}
+	option = {
+		name = news.22.d
+		trigger = {
+					has_government = accelerationism
+		}
+	}
+}
+news_event = {
+	id = news.23
+	title = news.23.t
+	desc = news.23.desc
+	picture = GFX_news_mag_socialism
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.23.a
+		trigger = { 
+			OR = {
+				has_government = libertarian_marxism
+				has_government = revolutionary_anarchism
+				has_government = vanguard_socialism
+				has_government = revisionist_socialism
+			}
+		}
+	}
+	option = {
+		name = news.23.b
+		trigger = { 
+				OR = {
+					has_government = liberalism
+					has_government = social_democratism
+					has_government = conservatism
+					has_government = right_authoritarianism
+				}
+		}
+	}
+	option = {
+		name = news.23.c
+		trigger = { 
+					has_government = accelerationism
+		}
+	}
+	option = {
+		name = news.23.d
+		trigger = { 
+				OR = {
+					has_government = reactionism
+					has_government = despotism
+				}
+		}
+	}
+}
+
+
+news_event = {
+	id = news.24
+	title = news.24.t
+	desc = news.24.desc
+	picture = GFX_news_mag_liberalism
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.24.a
+		trigger = { 
+			OR = {
+				has_government = libertarian_marxism
+				has_government = revolutionary_anarchism
+				has_government = vanguard_socialism
+				has_government = revisionist_socialism
+			}
+		}
+	}
+	option = {
+		name = news.24.b
+		trigger = { 
+				OR = {
+					has_government = liberalism
+					has_government = social_democratism
+					has_government = conservatism
+					has_government = right_authoritarianism
+				}
+		}
+	}
+	option = {
+		name = news.24.c
+		trigger = { 
+				OR = {
+					has_government = despotism
+					has_government = reactionism
+				}
+		}
+	}
+	option = {
+		name = news.24.d
+		trigger = { 
+					has_government = accelerationism
+		}
+	}
+}
+news_event = {
+	id = news.25
+	title = news.25.t
+	desc = news.25.desc
+	picture = GFX_news_mag_regency
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.25.a
+		trigger = { 
+			OR = {
+				has_government = libertarian_marxism
+				has_government = revolutionary_anarchism
+				has_government = vanguard_socialism
+				has_government = revisionist_socialism
+				has_government = liberalism
+				has_government = social_democratism
+				has_government = conservatism
+				has_government = right_authoritarianism
+			}
+		}
+	}
+	option = {
+		name = news.25.b
+		trigger = { 
+				OR = {
+					has_government = despotism
+					has_government = reactionism
+				}
+		}
+	}
+	option = {
+		name = news.25.c
+		trigger = { 
+					has_government = accelerationism
+		}
+	}
+}
+news_event = {
+	id = news.26
+	title = news.26.t
+	desc = news.26.desc
+	picture = GFX_report_ASS_merc_takeover
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.26.a
+	}
+}
+news_event = {
+	id = news.27
+	title = news.27.t
+	desc = news.27.desc
+	#picture = GFX_report_ASS_merc_takeover
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.27.a
+	}
+}
+news_event = {	#Tsar crowned RUS
+	id = news.29
+	title = news.29.t
+	desc = news.29.desc
+	#picture = 
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.29.a
+	}
+}
+news_event = {	#Tsar crowned SRU
+	id = news.30
+	title = news.30.t
+	desc = news.30.desc
+	#picture = 
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.30.a
+	}
+}
+
+#######################
+# RUSSIAN UNIFICATION #
+#######################
+
+news_event = {
+	id = news.31
+	title = news.31.t
+	desc = news.31.desc
+	picture = GFX_report_RUS_uni_rosenbaum
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	major = yes
+	
+	
+	
+	option = {
+		name = news.31.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_rosenbaum_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "rosenbaum_super"
+		}
+	}
+}
+news_event = {
+	id = news.32
+	title = news.32.t
+	desc = news.32.desc
+	picture = GFX_report_RUS_uni_chapayev
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	major = yes
+	
+	option = {
+		name = news.32.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_chapayev_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "chapayev_super"
+		}
+	}
+}
+news_event = {
+	id = news.33
+	title = news.33.t
+	desc = news.33.desc
+	picture = GFX_report_RUS_uni_trotsky
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	major = yes
+	
+	option = {
+		name = news.33.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_trotsky_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "trotsky_super"
+		}
+	}
+}
+news_event = {
+	id = news.34
+	title = news.34.t
+	desc = news.34.desc
+	picture = GFX_report_RUS_uni_gastev
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	major = yes
+	
+	option = {
+		name = news.34.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_gastev_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "gastev_super"
+		}
+	}
+}
+news_event = {
+	id = news.35
+	title = news.35.t
+	desc = news.35.desc
+	picture = GFX_report_RUS_uni_kerensky
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	major = yes
+	
+	option = {
+		name = news.35.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_kerensky_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "kerensky_super"
+		}
+	}
+}
+news_event = {
+	id = news.36
+	title = news.36.t
+	desc = news.36.desc
+	picture = GFX_report_RUS_uni_blackbloc
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			RUS = {
+				has_completed_focus = RUS_alt_black_bloc
+				owns_state = 570
+				owns_state = 234
+				owns_state = 574
+				owns_state = 652
+				owns_state = 590
+				owns_state = 1058
+				owns_state = 852
+				owns_state = 221
+			}
+			SRU = {
+				has_completed_focus = RUS_black_bloc
+				owns_state = 570
+				owns_state = 234
+				owns_state = 574
+				owns_state = 652
+				owns_state = 590
+				owns_state = 1058
+				owns_state = 852
+				owns_state = 221
+			}
+		}
+	}
+	
+	option = {
+		name = news.36.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_blackbloc_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "blackbloc_super"
+		}
+	}
+}
+news_event = {
+	id = news.37
+	title = news.37.t
+	desc = news.37.desc
+	picture = GFX_report_RUS_uni_diterikhs
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	major = yes
+	trigger = {
+		RUS = {
+			has_completed_focus = RUS_shtabs_kapitans
+			owns_state = 570
+			owns_state = 234
+			owns_state = 574
+			owns_state = 652
+			owns_state = 590
+			owns_state = 1058
+			owns_state = 852
+			owns_state = 221
+		}
+	}
+	option = {
+		name = news.37.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_diterikhs_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "diterikhs_super"
+		}
+	}
+}
+news_event = {
+	id = news.38
+	title = news.38.t
+	desc = news.38.desc
+	picture = GFX_report_RUS_uni_mladorossi
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	major = yes
+	trigger = {
+		RUS = {
+			has_completed_focus = RUS_union_of_young_russia
+			owns_state = 570
+			owns_state = 234
+			owns_state = 574
+			owns_state = 652
+			owns_state = 590
+			owns_state = 1058
+			owns_state = 852
+			owns_state = 221
+		}
+	}
+	option = {
+		name = news.38.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_mladorossi_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "mladorossi_super"
+		}
+	}
+}
+news_event = {
+	id = news.39
+	title = news.39.t
+	desc = news.39.desc
+	picture = GFX_report_RUS_uni_novykurs
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	major = yes
+	trigger = {
+		SRU = {
+			has_completed_focus = RUS_novy_kurs
+			owns_state = 570
+			owns_state = 234
+			owns_state = 574
+			owns_state = 652
+			owns_state = 590
+			owns_state = 1058
+			owns_state = 852
+			owns_state = 221
+		}
+	}
+	option = {
+		name = news.39.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = ZHR_rusuni_novykurs_Super_Event_Visible
+
+		hidden_effect = {
+			sound_effect = "novykurs_super"
+		}
+	}
+}
+
+#France at war with Germany
+news_event = {
+	id = news.100
+	title = news.100.t
+	desc = news.100.desc
+	picture = GFX_report_FRA_war_w_ger
+	
+	fire_only_once = no
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.100.a
+	}
+}

@@ -1,0 +1,46 @@
+# removes the country in scope from all wars (separately - it won't end the wars)
+separate_peace_all_wars = {
+	if = {
+		limit = { has_war = yes }
+		#custom_effect_tooltip = RF_separate_peace
+		hidden_effect = {
+			save_event_target_as = peace_country
+
+			# first peace out with faction leaders
+			every_enemy_country = {
+				limit = {
+					is_faction_leader = yes
+				}
+				event_target:peace_country = { white_peace = PREV }
+			}
+
+			# then all non-puppets who aren't in factions
+			every_enemy_country = {
+				limit = {
+					is_in_faction = no
+					is_subject = no
+				}
+				event_target:peace_country = { white_peace = PREV }
+			}
+		}
+	}
+}
+
+clear_sabotaged_resources_if_necesary = {
+	if = {
+		limit = {
+			not = {
+				has_dynamic_modifier = {
+					modifier = sabotaged_resources
+				}
+			}
+		}
+		
+		clear_variable = sabotaged_oil
+		clear_variable = sabotaged_aluminium
+		clear_variable = sabotaged_rubber
+		clear_variable = sabotaged_tungsten
+		clear_variable = sabotaged_steel
+		clear_variable = sabotaged_chromium
+	}
+}

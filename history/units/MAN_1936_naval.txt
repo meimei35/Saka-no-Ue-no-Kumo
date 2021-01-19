@@ -1,0 +1,21 @@
+units = {
+	fleet = {
+		name = "I dunno what to name this"			
+		naval_base = 4098  
+		task_force = {
+			name = "Who knows amirite?"
+			location = 9998  
+			ship = { name = "Yamashiro" definition = basic_destroyer start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = MAN version_name = "Fuso/Ise Class"} } }
+			ship = { name = "Yamashiro" definition = basic_destroyer start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = MAN version_name = "Fuso/Ise Class"} } }
+			ship = { name = "Yamashiro" definition = basic_destroyer start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = MAN version_name = "Fuso/Ise Class"} } }
+			ship = { name = "Yamashiro" definition = basic_destroyer start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = MAN version_name = "Fuso/Ise Class"} } }
+			ship = { name = "Yamashiro" definition = basic_destroyer start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = MAN version_name = "Fuso/Ise Class"} } }
+
+			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = MAN version_name = "Sendai Class"} } }
+			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = MAN version_name = "Sendai Class"} } }
+			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = MAN version_name = "Kuma/Nagara Class"} } }
+			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = MAN version_name = "Kuma/Nagara Class"} } }
+			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = MAN version_name = "Kuma/Nagara Class"} } }
+		}
+	}
+}

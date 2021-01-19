@@ -1,0 +1,271 @@
+###############
+# New Belgium #
+###############
+ideas = {
+
+	#################
+	# Country ideas #
+	#################
+	
+	country = {
+		NBE_mining = {
+			removal_cost = -1 
+			picture = ast_naval_auxiliary_patrol
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.10
+				monthly_population = -0.6
+				local_resources_factor = 1
+				
+			}
+		}
+		NBE_suicidalhorror = {
+			removal_cost = -1 
+			picture = air_war_plans_division_focus
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_org = 0.3
+				
+			}
+		}
+		NBE_victory = {
+			removal_cost = -1 
+			picture = air_war_plans_division_focus
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			stability_factor = 0.10
+			war_support_factor = 0.10
+			}
+		}
+		NBE_laststand = {
+			removal_cost = -1 
+			picture = ENG_the_war_to_end_all_wars
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			surrender_limit = 0.1
+			}
+		}
+		NBE_dominatetoserve = {
+			removal_cost = -1 
+			picture = neutrality_idea
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			attrition = -0.20
+			
+			}
+		}
+		NBE_omnicide = {
+			removal_cost = -1 
+			picture = saf_history_of_segregation_2
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			monthly_population = -4
+			conscription = -0.05
+			stability_weekly = 0.02
+			right_authoritarianism_drift = 0.05
+			
+			}
+		}
+		NBE_leopoldianmyth = {
+			removal_cost = -1 
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			stability_factor = 0.10
+			right_authoritarianism_drift = 0.05
+			liberalism_drift = 0.05
+			local_resources_factor = 0.40
+			
+			}
+		}
+		NBE_slaveempire = {
+			removal_cost = -1 
+			picture = ast_classify_aliens
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			monthly_population = -1
+			stability_factor = -0.10
+			war_support_factor = -0.10
+			consumer_goods_factor = -0.20
+			political_power_cost = -0.25
+			
+			}
+		}
+		NBE_completeisolation = {
+			removal_cost = -1 
+			picture = vittoria_mutilata
+			allowed = {
+				original_tag = NBE
+			}
+			modifier = {
+			monthly_population = 0.2
+			stability_factor = 0.2
+			war_support_factor = 0.2
+			consumer_goods_factor = -0.20
+			encryption = 2
+			
+			}
+		}
+	}
+	
+	##############
+	# Government #
+	##############	
+	
+	head_of_government = {
+		NBE_Pierre_Ryckmans_hog = {
+			picture = GFX_idea_NBE_Pierre_Ryckmans_hog
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				head_of_government
+				hog_local_tyrant
+			}
+		}
+	}
+	
+	foreign_minister = {
+		NBE_Prosper_Dezitter = {
+			picture = GFX_idea_NBE_Prosper_Dezitter
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				foreign_minister
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+	}
+	
+	economy_minister = {
+		NBE_Raoul_de_Thuin = {
+			picture = GFX_idea_NBE_Raoul_de_Thuin
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				economy_minister
+				eco_construction_magnate
+			}
+		}
+	}
+	
+	security_minister = {
+		NBE_Carl_Panzram = {
+			picture = GFX_idea_NBE_Carl_Panzram
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}
+		}
+	}
+	
+	head_of_intel = {
+		NBE_Jean_Baptiste_Sipido = {
+			picture = GFX_idea_NBE_Jean_Baptiste_Sipido
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				head_of_intel
+				int_logistics_specialist
+			}
+		}
+	}
+	
+	chief_of_staff = {
+		NBE_Rene_Lagrou = {
+			picture = GFX_idea_NBE_Rene_Lagrou
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				cos_school_of_psychology
+			}
+		}
+	}
+	
+	chief_of_army = {
+		NBE_Robert_Jan_Verbelen = {
+			picture = GFX_idea_NBE_Robert_Jan_Verbelen
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+	
+	chief_of_navy = {
+		NBE_Hendrik_Elias = {
+			picture = GFX_idea_NBE_Hendrik_Elias
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				cnav_decisive_battle_doctrine
+			}
+		}
+	}
+	
+	chief_of_air_force = {
+		NBE_Prosper_Dezitter1 = {
+			picture = GFX_idea_NBE_Prosper_Dezitter1
+			allowed = {
+				original_tag = NBE
+			}
+			traits = {
+				cair_carpet_bombing_doctrine
+			}
+		}
+	}
+	
+	#############
+	# Companies #
+	#############
+
+	#### General ####
+	industrial_concern = {
+	
+	}
+	
+	#### Weapons ####
+	weapons_manufacturer = {
+	
+	}
+	
+	#### Air and Naval ####
+	air_naval_manufacturer = {
+	
+	}
+	
+	#############
+	# Theorist	#
+	#############
+	theorist = {
+		
+	}
+}

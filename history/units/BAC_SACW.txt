@@ -1,0 +1,143 @@
+division_template = {
+	name = "Tribal Militia"				
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Revolutionary Impi"			
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Mobile Impi"
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Amabutho ase-Afrika #####
+	division= {	
+		#name = "I-zulu yokuqala"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1468 # Natal
+		division_template = "Tribal Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "Ts'epo ea Sechaba"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4556 # Lesotho
+		division_template = "Tribal Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "1 iCandelo leXhosa"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1833  # Transkei
+		division_template = "Tribal Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "2 iCandelo leXhosa"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4696 # Transkei
+		division_template = "Revolutionary Impi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "Ludlukhala Regiment"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7900 # Swaziland
+		division_template = "Revolutionary Impi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "I-1 zulu yamahhashi"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13296 # Natal
+		division_template = "Mobile Impi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	##### No Naval OOB #####
+}
+
+air_wings = {
+	###African Air Force
+	275 = {
+		# Stolen SAAF Fighter Squadron -- Hawker Furys
+		fighter_equipment_0 =  {
+			owner = "BAC" 
+			amount = 30
+		}
+	}
+}
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BAC"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+}

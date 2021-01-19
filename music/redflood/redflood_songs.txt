@@ -1,0 +1,295 @@
+
+music_station = "redflood"
+
+## peace ##
+
+music = {
+	song = "Tchaikovsky_Marche_Slave"
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "Khachaturian_Masquerade_Suite_Waltz"
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Gustav_Holst_Venus"
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Rachmaninov_The_Isle_of_the_Dead"
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "George_Antheil_Symphony_No_3_Allegro"
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "George_Antheil_Capital_of_the_World_Suite"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 80
+			OR = {
+				original_tag = FRA
+				original_tag = USA
+				original_tag = ENG
+				original_tag = GER
+				original_tag = FIU
+				original_tag = ITA
+			}
+			has_war = no
+		}
+	}
+}
+
+## war ##
+
+music = {
+	song = "Gustav_Holst_Mars"
+	
+	chance = {
+		factor = 0.5
+
+		modifier = {
+			factor = 2.5
+			has_war = yes
+		}	
+	}	
+}
+
+music = {
+	song = "Alexander_Mosolov_The_Iron_Foundry"
+	
+	chance = {
+		factor = 0.5
+
+		modifier = {
+			factor = 2.5
+			has_war = yes
+		}	
+	}	
+}
+
+music = {
+	song = "Arthur_Honegger_Pacific_231"
+	
+	chance = {
+		factor = 0.5
+
+		modifier = {
+			factor = 2.5
+			has_war = yes
+		}	
+	}	
+}
+
+music = {
+	song = "Stravinsky_Dance_of_Kashchei"
+	
+	chance = {
+		factor = 0.5
+
+		modifier = {
+			factor = 2.5
+			has_war = yes
+		}	
+	}	
+}
+
+music = {
+	song = "George_Antheil_Symphony_No_3_Back_to_Baltimore"
+	
+	chance = {
+		factor = 0.5
+
+		modifier = {
+			factor = 2.5
+			has_war = yes
+		}	
+	}	
+}
+
+## country specific ##
+
+music = {
+	song = "Warszawianka"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			original_tag = POL
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "The_Cossacks_song"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			original_tag = UKR
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Oy_u_luzi_chevona_kalyna"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			original_tag = UKR
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Vocalistas_Tropicais_OU_VAI_OU_RACHA"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			OR = {
+				original_tag = BRA
+				original_tag = BRR
+			}
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Vocalistas_Tropicais_A_VOZ_DO_MORRO"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			OR = {
+				original_tag = BRA
+				original_tag = BRR
+			}
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Tamri_Shoror_Muradian_Ensemble"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			original_tag = ARM
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "Edgard_Varese_Ionisation"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			OR = {
+				original_tag = PCN
+				original_tag = ALT
+				original_tag = LIB
+				original_tag = TAN
+				original_tag = TUA
+				original_tag = MAG
+			}
+		}
+	}	
+}
+
+music = {
+	song = "Tchaikovsky_Marche_Slave_part_2"
+
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 70
+			OR = {
+				tag = RUS
+				tag = UKR
+				tag = POL
+				tag = YUG
+				tag = MNT
+				tag = BLR
+				tag = ZHR
+				tag = SRU
+			}
+		}
+	}	
+}
+
+music = {
+	song = "Edgard_Varese_Deserts_1st_interpolation"
+	
+	chance = {
+		factor = 0.01
+		modifier = {
+			factor = 60
+			original_tag = ZHR
+			has_government = accelerationism
+		}
+	}	
+}

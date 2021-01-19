@@ -1,0 +1,1061 @@
+add_namespace = spain
+
+country_event = {
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = SPR
+		has_defensive_war = no
+		date > 1936.9.16
+	}
+	mean_time_to_happen = {
+		days = 1	# Historical outbreak time after elections
+	}
+	option = { # Support Nationalists
+		name = spain.1.a #"Go with the generals"
+		trigger = {
+			NOT = {
+				has_country_flag = cnt_flag
+				has_country_flag = falange_flag
+			}
+		}
+		hidden_effect = {
+		    set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War"
+			SPA = {
+			    add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 176
+				transfer_state = 174
+				transfer_state = 171
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War"
+			    declare_war_on = { target = SPR  type = annex_everything }
+				set_cosmetic_tag = SPR
+				set_equipment_fraction = 0.2
+			    change_tag_from = SPR
+			}
+			SPR = {
+				add_state_claim = 970
+				add_state_claim = 290
+				add_state_claim = 972
+				add_state_claim = 461
+				add_state_claim = 971
+				add_state_claim = 462
+				add_state_claim = 969
+				add_state_claim = 783
+				add_state_claim = 699
+				add_state_claim = 967
+				add_state_claim = 968
+				add_state_claim = 178
+			}
+			news_event = { hours = 6 id = spain.4 }
+			set_equipment_fraction = 0.5
+			set_equipment_fraction = 0.1
+			set_stability = 0.9
+			set_war_support = 0.8
+		}
+        custom_effect_tooltip = "Will start as the Nationalists"
+	}
+	option = {
+		name = spain.1.b #"Stick with the Republic"
+		trigger {
+			NOT = { 
+				has_country_flag = cnt_flag
+				has_country_flag = falange_flag
+			}
+		}
+		hidden_effect = {
+		    set_global_flag = spain_cw
+			SPA = {
+			    add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 176
+				transfer_state = 174
+				transfer_state = 171
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War"
+				set_cosmetic_tag = SPR
+				set_equipment_fraction = 0.6
+			
+			}
+			SPR = {
+				add_state_claim = 970
+				add_state_claim = 290
+				add_state_claim = 972
+				add_state_claim = 461
+				add_state_claim = 971
+				add_state_claim = 462
+				add_state_claim = 969
+				add_state_claim = 783
+				add_state_claim = 699
+				add_state_claim = 967
+				add_state_claim = 968
+				add_state_claim = 178
+			}
+			declare_war_on = { target = SPA  type = annex_everything }
+			
+
+			news_event = { hours = 6 id = spain.4 }
+	
+				
+			load_oob = "SPR_Civil_War"
+			set_equipment_fraction = 0.4
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			#country_event = { id = spain.3 days = 7 }
+		}
+		custom_effect_tooltip = "Will start as the Republic"
+	}
+	
+	option = {
+		name = spain.1.c #"Go with the Generals"
+		trigger = {
+			has_country_flag = cnt_flag
+			NOT = { 
+				has_country_flag = falange_flag 
+			}
+		}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+				add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 176
+				transfer_state = 174
+				transfer_state = 171
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+			}
+			SPR = {
+				add_state_claim = 970
+				add_state_claim = 290
+				add_state_claim = 972
+				add_state_claim = 461
+				add_state_claim = 971
+				add_state_claim = 462
+				add_state_claim = 969
+				add_state_claim = 783
+				add_state_claim = 699
+				add_state_claim = 967
+				add_state_claim = 968
+				add_state_claim = 178
+			}
+			SPA = { change_tag_from = SPR }
+			custom_effect_tooltip = "Will start as the Nationalists"
+		}
+	}
+	option = {
+		name = spain.1.d #"Stick with the Republic"
+		trigger = {
+			has_country_flag = cnt_flag
+			NOT = { has_country_flag = falange_flag }
+		}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+				add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 176
+				transfer_state = 174
+				transfer_state = 171
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }		
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+			}
+			SPR = {
+				add_state_claim = 970
+				add_state_claim = 290
+				add_state_claim = 972
+				add_state_claim = 461
+				add_state_claim = 971
+				add_state_claim = 462
+				add_state_claim = 969
+				add_state_claim = 783
+				add_state_claim = 699
+				add_state_claim = 967
+				add_state_claim = 968
+				add_state_claim = 178
+			}	
+		}
+		custom_effect_tooltip = "Will start as the Republic"
+	}
+	option = {
+		name = spain.1.e #"Side with the commune"
+		trigger = {
+		has_country_flag = cnt_flag
+		NOT = { has_country_flag = falange_flag }
+		}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+				add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 176
+				transfer_state = 174
+				transfer_state = 171
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+			}
+			SPR = {
+				add_state_claim = 970
+				add_state_claim = 290
+				add_state_claim = 972
+				add_state_claim = 461
+				add_state_claim = 971
+				add_state_claim = 462
+				add_state_claim = 969
+				add_state_claim = 783
+				add_state_claim = 699
+				add_state_claim = 967
+				add_state_claim = 968
+				add_state_claim = 178
+			}
+			CNT = { change_tag_from = SPR }
+		}
+		custom_effect_tooltip = "Will start as the CNT"
+	}
+	
+	
+	
+	########################
+	###4 Way civil war######
+	option = {
+	name = spain.1.f #"Stick with the Republic"
+		trigger = {
+			has_country_flag = falange_flag
+		}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+			    add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War2"
+				declare_war_on = { target = SPR  type = annex_everything }
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+			}
+			FAL = {
+				add_state_core = 171
+				add_state_core = 174
+				add_state_core = 176
+				transfer_state = 171
+				transfer_state = 174
+				transfer_state = 176
+				load_oob = "FAL_Civil_War"
+				declare_war_on = { target = SPA  type = annex_everything }
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = CNT  type = annex_everything }
+			}	
+		}
+		custom_effect_tooltip = "Will start as the Republic"
+	}
+	option = {
+		name = spain.1.g #"go with the generals"
+		trigger = {
+			has_country_flag = falange_flag
+		}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+			    add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War2"
+				declare_war_on = { target = SPR  type = annex_everything }
+				change_tag_from = SPR
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+			}
+			FAL = {
+				add_state_core = 171
+				add_state_core = 174
+				add_state_core = 176
+				transfer_state = 171
+				transfer_state = 174
+				transfer_state = 176
+				load_oob = "FAL_Civil_War"
+				declare_war_on = { target = SPA  type = annex_everything }
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = CNT  type = annex_everything }
+			}
+		}
+		custom_effect_tooltip = "Will start as the Nationalists"
+	}
+	option = {
+		name = spain.1.h #"go with the commune"
+		trigger = {
+	    has_country_flag = falange_flag
+		}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+			    add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War2"
+				declare_war_on = { target = SPR  type = annex_everything }
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+				change_tag_from = SPR
+			}
+			FAL = {
+				add_state_core = 171
+				add_state_core = 174
+				add_state_core = 176
+				transfer_state = 171
+				transfer_state = 174
+				transfer_state = 176
+				load_oob = "FAL_Civil_War"
+				declare_war_on = { target = SPA  type = annex_everything }
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = CNT  type = annex_everything }
+			}
+	
+		}
+		custom_effect_tooltip = "Will start as the CNT"
+	}
+	option = {	
+	name = spain.1.i #"go with the falange"
+	trigger = {
+	    has_country_flag = falange_flag
+	}
+		hidden_effect = {
+			set_global_flag = spain_cw
+			load_oob = "SPR_Civil_War2"
+			SPA = {
+			    add_state_core = 118
+				add_state_core = 173
+				add_state_core = 974
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 167
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 41
+				add_state_core = 166
+				add_state_core = 165
+				add_state_core = 177
+				add_state_core = 176
+				add_state_core = 172
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 965
+				add_state_core = 973	
+				transfer_state = 166
+				transfer_state = 699
+				transfer_state = 178
+				transfer_state = 290
+				transfer_state = 169
+				transfer_state = 170
+				transfer_state = 177
+				transfer_state = 297
+				transfer_state = 970
+				transfer_state = 972
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 971
+				transfer_state = 969
+				transfer_state = 783
+				transfer_state = 967
+				transfer_state = 968
+				load_oob = "SPA_Civil_War2"
+				declare_war_on = { target = SPR  type = annex_everything }
+			}
+			CNT = {
+				add_state_core = 165
+				add_state_core = 965
+				add_state_core = 172
+				add_state_core = 973
+				transfer_state = 165
+				transfer_state = 965
+				transfer_state = 172
+				transfer_state = 973
+				load_oob = "CNT_Civil_War"
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = SPA  type = annex_everything }
+			}
+			FAL = {
+				add_state_core = 171
+				add_state_core = 174
+				add_state_core = 176
+				transfer_state = 171
+				transfer_state = 174
+				transfer_state = 176
+				load_oob = "FAL_Civil_War"
+				declare_war_on = { target = SPA  type = annex_everything }
+				declare_war_on = { target = SPR  type = annex_everything }
+				declare_war_on = { target = CNT  type = annex_everything }
+				change_tag_from = SPR
+			}	
+		}
+		custom_effect_tooltip = "Will start as the Falange"
+	}
+}
+
+###Done###
+country_event = {
+	id = spain.2
+	title = spain.2.t #"Moroccon Independence Movement"
+	desc = spain.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+		
+    trigger = {
+		tag = SPA
+		has_global_flag = spain_cw
+		}
+		
+		mean_time_to_happen = {
+		days = 30
+	    }
+		
+		option = {
+			name = spain.2.a #"No independence to them"
+			declare_war_on = { target = MOR  type = annex_everything }
+			hidden_effect= {
+			load_oob = "SPA_moroccowar_oob"
+			country_event = spain.6
+			MOR = {
+					load_oob = "MOR_oob"
+					transfer_state = 971
+					transfer_state = 972
+					transfer_state = 462
+					transfer_state = 461
+					transfer_state = 699
+			}
+			declare_war_on = { target = MOR  type = annex_everything }
+			}
+			custom_effect_tooltip = "Then war it is"	
+		}
+
+		option = {
+			name = spain.2.b #"We will Give then Independence, for now"
+			hidden_effect= {
+			MOR = {
+			        load_oob = "MOR_oob"
+					transfer_state = 971
+					transfer_state = 972
+					transfer_state = 462
+					transfer_state = 461
+					transfer_state = 699
+			}
+		}	
+		custom_effect_tooltip = "We back out"
+		}
+	
+}
+
+country_event = {
+	id = spain.3
+	title = spain.3.t #"Instablity in the Country"
+	desc = spain.3.d #"Oh the humanity"
+	fire_only_once = yes
+	trigger = {
+		tag = SPR
+		date > 1936.4.5
+	}
+
+	option = {
+	   name = spain.3.a #"Send out the Military Police!"
+	   add_war_support = -0.1
+	   add_political_power = 30
+	}
+	 
+	option = {
+	   name = spain.3.b #"Ignore it"
+	   add_political_power = -20
+	   hidden_effect = {
+	   }
+	}
+}
+
+
+news_event = {
+	id = spain.4
+	title = spain.4.t #"Outbreak of the Spanish Civil war"
+	desc = spain.4.b #"The spanish civil war breakes out"
+	picture = GFX_news_event_032
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	
+	date > 1936.9.18
+	
+	}
+	
+	option = {
+		name = spain.4.a #"Yes"
+		trigger = {
+			NOT = { original_tag = SPR }
+		}
+	}
+}
+news_event = {
+	#end of scw
+	id = spain.5
+	title = spain.5.t
+	desc = spain.5.d
+	picture = GFX_news_event_032
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = spain.5.a
+		
+	}
+}
+news_event = {
+	id = spain.6
+	title = spain.6.t #"Moroccon Independence war"
+	desc = spain.6.d #""
+	picture = GFX_news_event_032
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = spain.6.a #"ooh humanity"
+		trigger = {
+			NOT = { tag = SPR tag = SPA tag = MOR }
+		}
+	}
+	option = {
+		name = spain.6.b #"Our enemy chosed conquest!"
+		trigger = { 
+			tag = SPR
+		}
+	}
+	option = {
+		name = spain.6.c #"Glory to the empire!"
+		trigger = { 
+			tag = SPA
+		}
+	}
+	option = {
+		name = spain.6.d #"We will arm our borders!"
+		trigger = { 
+			tag = MOR
+		}
+	}
+}
+country_event = {
+	id = spain.7
+	title = spain.7.t
+	desc = spain.7.d
+	is_triggered_only = yes
+	option = {
+	#spa
+		name = spain.7.a
+		if = {
+			limit = {
+				controls_state = 169
+			}
+			annex_country = {
+				target = SPA
+				transfer_troops = no
+			}
+		}
+	}
+}
+country_event = {
+	id = spain.8
+	title = spain.8.t
+	desc = spain.8.d
+	is_triggered_only = yes
+	option = {
+		name = spain.8.a
+		if = {
+			limit = {
+				controls_state = 41
+			}
+			annex_country = {
+				target = SPR
+				transfer_troops = no
+			}
+		}
+	}
+}
+country_event = {
+	id = spain.9
+	title = spain.9.t
+	desc = spain.9.d
+	is_triggered_only = yes
+	option = {
+		name = spain.9.a
+		if = {
+			limit = {
+				controls_state = 165
+			}
+			annex_country = {
+				target = CNT
+				transfer_troops = no
+			}
+		}
+	}
+}
+country_event = {
+	id = spain.10
+	title = spain.10.t
+	desc = spain.10.d
+	is_triggered_only = yes
+	option = {
+	
+		name = spain.10.a
+		if = {
+		limit = { controls_state = 171}
+			annex_country = {
+				target = FAL
+				transfer_troops = no
+				}
+		}
+	}
+}
+country_event = {
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1}
+	trigger = {
+	has_global_flag = spain_cw
+	OR = {
+	AND = {
+		tag	= SPR
+		AND = {
+		NOT = { country_exists = SPA}
+		NOT = { country_exists = FAL}
+		NOT = { country_exists = CNT}
+		}
+	}
+	AND = {
+		tag	= SPA
+		AND = {
+		NOT = { country_exists = SPR}
+		NOT = { country_exists = FAL}
+		NOT = { country_exists = CNT}
+		}
+	}
+	AND = {
+	tag = FAL
+		AND = {
+		NOT = { country_exists = SPA}
+		NOT = { country_exists = SPR}
+		NOT = { country_exists = CNT}
+		}
+	}
+	AND = {
+	tag = CNT
+		AND = {
+		NOT = { country_exists = SPA}
+		NOT = { country_exists = SPR}
+		NOT = { country_exists = FAL}
+		}
+	}
+	}
+	}
+	option = {
+		name = spain.11.a
+		news_event = { hours = 6 id = spain.5 }
+		set_global_flag = scw_over
+	}
+}
+
+country_event = {
+	id = spain.100
+	title = spain.100.t
+	desc = spain.100.d
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date > 1936.5.16
+	}
+	option = {
+		name = spain.100.a
+		ai_chance = {
+			factor = 2
+		}
+	}
+	option = {
+		name = spain.100.b
+		hidden_effect = {
+			country_event = {
+				id = spain.101
+				days = 30
+			}
+		}
+		set_country_flag = cnt_flag
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = spain.101
+	title = spain.101.t
+	desc = spain.101.d
+	is_triggered_only = yes
+
+	option = {
+		name = spain.101.a
+		ai_chance = {
+			factor = 4
+		}
+	}
+	option = {
+		name = spain.101.b
+		set_country_flag = falange_flag
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

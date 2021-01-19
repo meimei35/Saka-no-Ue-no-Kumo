@@ -1,0 +1,113 @@
+
+################
+# South Africa #
+################
+ideas = {
+
+#################
+# Country ideas #
+#################
+
+	country = {
+		SAF_dubul = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_dubul"}
+			modifier = {
+				reactionism_drift = 0.01
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.1
+				stability_factor = -0.2
+			}
+			picture = SAF_dubul
+		}
+		
+		SAF_baasskap = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_baasskap"}
+			modifier = {
+				right_authoritarianism_drift = 0.01
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.1
+				stability_factor = 0.05
+			}
+			picture = SAF_baasskap
+		}
+		
+		SAF_bantu_famine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_bantu_famine"}
+			modifier = {
+				consumer_goods_factor = 0.20
+				political_power_gain = -0.2 
+				conscription_factor = -0.4
+				stability_factor = -0.2
+			}
+			picture = SAF_bantu_famine
+		}
+		SAF_economic_stagnation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_economic_stagnation"}
+			modifier = {
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.8
+				production_speed_infrastructure_factor = -0.3
+				production_speed_buildings_factor = -0.4
+				stability_factor = -0.2
+			}
+			picture = SAF_economic_stagnation
+		}
+		SAF_native_act = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_native_act"}
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.4
+                conscription_factor = -0.4
+				production_speed_buildings_factor = -0.3
+			}
+			picture = SAF_native_act
+		}
+		SAF_red_friday = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_red_friday"}
+			modifier = {
+				stability_factor = -0.25
+				vanguard_socialism_drift = 0.1
+			}
+			picture = SAF_red_friday
+		}
+		
+		SAF_economic_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_economic_reform"}
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+			picture = SAF_economic_reform
+		}
+	}
+	
+#############
+# Companies #
+#############
+
+	#### General ####
+	industrial_concern = {
+	
+	}
+	
+	#### Weapons ####
+	weapons_manufacturer = {
+	
+	}
+	
+	#### Air and Naval ####
+	air_naval_manufacturer = {
+	
+	}
+	
+#############
+# Theorist	#
+#############
+	theorist = {
+		
+	}
+}

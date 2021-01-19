@@ -1,0 +1,143 @@
+capital = 608
+
+oob = "BYJ_1936"
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	set_naval_oob = "BYJ_1936_naval_legacy"
+}
+if = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+	set_naval_oob = "BYJ_1936_naval_mtg"	
+}
+set_research_slots = 3
+add_manpower = 200000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+
+set_politics = {
+	ruling_party = 	right_authoritarianism
+	last_election = "1933.10.25"
+	election_frequency = 48
+	elections_allowed = no
+}
+add_ideas = { 
+	limited_conscription
+	BYJ_egg_dancer
+	BYJ_industrial_investment
+	BYJ_fengtian_threat
+	BYJ_compulsory_education
+}
+	
+set_popularities = {
+	vanguard_socialism = 4
+	libertarian_marxism = 2
+	revolutionary_anarchism = 0
+	revisionist_socialism = 2
+	social_democratism = 6
+	liberalism = 10
+	conservatism = 14
+	right_authoritarianism = 31
+	despotism = 17
+	reactionism = 9
+	accelerationism = 5
+}
+
+
+create_country_leader = {
+	name = "Yan Xishan"
+	desc = "POLITICS_YAN XISHAN_DESC"
+	picture = "Portrait_Yan_Xishan.dds"
+	expire = "1965.1.1"
+	ideology = military_junta
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Fu Zuoyi"
+	desc = "POLITICS_FU_DESC"
+	picture = "Fu_Zuoyi.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Liang Shiyi"
+	desc = "POLITICS_Liang_DESC"
+	picture = "Liang_Shiyi.dds"
+	expire = "1965.1.1"
+	ideology = market_liberalism
+	traits = {
+		
+	}
+}
+#POTENTIAL LEADER IN TREE - SAVED DETAILS HERE#
+#create_country_leader = {
+#	name = "Zhang Xueliang"
+#	desc = "POLITICS_ZHANG_DESC"
+#	picture = "Portrait_Zhang_Xueliang.dds"
+#	expire = "1965.1.1"
+#	ideology = military_junta
+#	traits = {
+#		
+#	}
+#}
+create_country_leader = {
+	name = "Yan Yangchu"
+	desc = "POLITICS_YAN_YANGCHU_DESC"
+	picture = "Yan_Yangchu.dds"
+	expire = "1965.1.1"
+	ideology = left_nationalism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Zuo Shunsheng"
+	desc = "POLITICS_ZUO_DESC"
+	picture = "Zuo_Shunsheng.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_populism
+	traits = {
+		
+	}
+}

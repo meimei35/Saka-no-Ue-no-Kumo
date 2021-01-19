@@ -1,0 +1,35 @@
+﻿l_english:
+#COUNTRY NAME#
+
+#PARTIES#
+GRE_revolutionary_anarchism_party:0 "KE"
+GRE_vanguard_socialism_party:0 "KKE"
+GRE_libertarian_marxism_party:0 "SKE"
+GRE_revisionist_socialism_party:0 "AKE"
+GRE_social_democratism_party:0 "DSKE"
+GRE_placeholderism_party:0 "EEK"
+GRE_liberalism_party:0 "KF"
+GRE_conservatism_party:0 "LK"
+GRE_right_authoritarianism_party:0 "EDES"
+GRE_despotism_party:0 "EV"
+GRE_reactionism_party:0 "EESK"
+GRE_accelerationism_party:0 "EYKG"
+GRE_vanguard_socialism_party_long:0 "Kommounistikó Kómma Elládas"
+GRE_libertarian_marxism_party_long:0 "Sosialistiko Kómma Elládas"
+GRE_revolutionary_anarchism_party_long:0 "Koinopoliteía tis Ergasías"
+GRE_revisionist_socialism_party_long:0 "Agrotikó Kómma Elládos"
+GRE_social_democratism_party_long:0 "Demokratiko Sosialistiko Komma Ellados"
+GRE_placeholderism_party_long:0 "Ethnikon Enotikon Komma"
+GRE_liberalism_party_long:0 "Komma Fileleftheron"
+GRE_conservatism_party_long:0 "Laiko Komma"
+GRE_right_authoritarianism_party_long:0 "Ethnikós Dimokratikós Ellinikós Sýndesmos"
+GRE_reactionism_party_long:0 "Elliniko Ethniko Sosialistiko Komma"
+GRE_despotism_party_long:0 "Enosis Vasilikon"
+GRE_accelerationism_party_long:0 "Enosis Ypostiriktón Kódika Gortyn"
+#LEADER DESCRITIONS#
+#IDEAS#
+GRE_ECONOMIC_COLLAPSE:0 "Economic Collapse"
+GRE_ECONOMIC_COLLAPSE_2:0 "Improving Economic Situation"
+#CUSTOM TOOLTIPS AND FLAGS#
+#DECISIONS (1.5 Update)#
+#FOCUSES#

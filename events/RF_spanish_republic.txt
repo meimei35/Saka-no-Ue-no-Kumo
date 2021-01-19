@@ -1,0 +1,266 @@
+﻿add_namespace = spr
+
+country_event = {
+id = spr.1
+    title = spr.1.t
+    desc = spr.1.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.1.a
+		set_politics = {
+			ruling_party = social_democratism
+			elections_allowed = yes
+		}
+        ai_chance = {
+            factor = 1
+        }
+}
+}
+country_event = {
+ id = spr.2
+    title = spr.2.t
+    desc = spr.2.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.2.a
+		retire_country_leader = yes
+		create_country_leader = {
+		 	 	name = "Manuel Azaña"
+				picture = "Portrait_Spain_Manuel_Azana.tga"
+				expire = "1965.1.1"
+				ideology = progressivism
+				traits = {
+				}
+		}
+			ai_chance = {
+				factor = 1
+			}
+	}
+}
+country_event = {
+ id = spr.3
+    title = spr.3.t
+    desc = spr.3.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.3.a
+		country_event = spr.4
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+country_event = {
+ id = spr.4
+    title = spr.4.t
+    desc = spr.4.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.4.a
+		country_event = spr.5
+        ai_chance = {
+            factor = 1
+        }
+	}
+	
+	option = {
+	name = spr.4.b
+		country_event = spr.6
+			ai_chance = {
+				factor = 1
+			}
+	}
+}
+country_event = {
+ id = spr.5
+    title = spr.5.t
+    desc = spr.5.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.5.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+country_event = {
+ id = spr.6
+    title = spr.6.t
+    desc = spr.6.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.6.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+country_event = {
+ id = spr.7
+    title = spr.7.t
+    desc = spr.7.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.7.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+country_event = {
+ id = spr.8
+    title = spr.8.t
+    desc = spr.8.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.8.a
+		country_event = spr.9
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+country_event = {
+ id = spr.9
+    title = spr.9.t
+    desc = spr.9.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.9.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+country_event = {
+ id = spr.10
+    title = spr.10.t
+    desc = spr.10.d
+    picture = GFX_report_event_military_planning
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SPR
+        date > 1936.0200.01
+    }
+
+    major = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = spr.10.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}

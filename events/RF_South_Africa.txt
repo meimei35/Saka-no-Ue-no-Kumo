@@ -1,0 +1,659 @@
+﻿add_namespace = saf
+
+country_event = {
+ id = saf.1
+ title = saf.1.title
+ desc = saf.1.desc
+ picture = GFX_report_event_roos_death
+ fire_only_once = yes
+ major = yes
+ trigger = {
+focus_progress = {
+	focus = SAF_crisisof1936
+	progress > 0.5}
+	}
+	mean_time_to_happen = { days = 10}
+	option = {
+		name = saf.1.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_1936_elections
+		add_popularity = {
+				ideology = revisionist_socialism
+				popularity = 0.1
+			}
+	}
+}
+
+country_event = {
+ id = saf.2
+ title = saf.2.title
+ desc = saf.2.desc
+ picture = GFX_report_event_saf_1936_elections
+ fire_only_once = yes
+ major = yes
+ trigger = {
+	SAF = { has_country_flag = SAF_1936_elections
+	}	
+	date > 1936.2.5
+	}
+	immediate = {
+	country_event = {
+		id = saf.15
+		days = 5
+	}
+	country_event = {
+		id = saf.16
+		days = 12
+	}
+	country_event = {
+		id = saf.17
+		days = 18
+	}
+	country_event = {
+		id = saf.18
+		days = 25
+	}
+	}
+	option = {
+		name = saf.2.a
+		ai_chance = { factor = 15}
+		set_country_flag = SAF_1936_election_status_quo
+		set_politics = { ruling_party = liberalism
+		elections_allowed = no }
+	}
+	option = {
+		name = saf.2.b
+		ai_chance = { factor = 10}
+		set_country_flag = SAF_1936_election_status_quo
+		set_politics = { ruling_party = conservatism
+		elections_allowed = no }
+	}
+	option = {
+		name = saf.2.d
+		ai_chance = { factor = 15}
+		set_country_flag = SAF_1936_election_van_die_volk
+		set_politics = { ruling_party = right_authoritarianism
+		elections_allowed = no }
+	}
+	option = {
+		name = saf.2.e
+		ai_chance = { factor = 15}
+		set_country_flag = SAF_1936_election_a_new_way
+		set_politics = { ruling_party = revisionist_socialism
+		elections_allowed = no }
+	}
+}
+
+country_event = {
+ id = saf.3
+ title = saf.3.title
+ desc = saf.3.desc
+ picture = GFX_report_event_SAF_troubles_a
+ fire_only_once = yes
+ major = yes
+ trigger = {
+	SAF = { has_country_flag = SAF_1936_election_status_quo
+	}
+	focus_progress = {
+	focus = SAF_welfarestate
+	progress > 0.5 }
+	}
+	mean_time_to_happen = { days = 10}
+	option = {
+		name = saf.3.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_civil_war_approach
+		add_popularity = {
+				ideology = vanguard_socialism
+				popularity = 0.05
+			}
+		add_popularity = {
+				ideology = right_authoritarianism
+				popularity = 0.05
+			}
+		add_popularity = {
+				ideology = reactionism
+				popularity = 0.1
+			}
+		add_stability = -0.1
+	}
+}
+country_event = {
+ id = saf.4
+ title = saf.4.title
+ desc = saf.4.desc
+ picture = GFX_report_event_SAF_troubles_b
+ fire_only_once = yes
+ major = yes
+ trigger = {
+	SAF = { has_country_flag = SAF_1936_election_status_quo
+	}
+	focus_progress = {
+	focus = SAF_federalcommision
+	progress > 0.5 }
+	}
+	mean_time_to_happen = { days = 10}
+	option = {
+		name = saf.4.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_civil_war_approach2
+		clr_country_flag = SAF_civil_war_approach
+		add_popularity = {
+				ideology = vanguard_socialism
+				popularity = 0.05
+			}
+		add_popularity = {
+				ideology = right_authoritarianism
+				popularity = 0.1
+			}
+		add_popularity = {
+				ideology = reactionism
+				popularity = 0.05
+			}
+		add_stability = -0.1
+	}
+}
+country_event = {
+ id = saf.5
+ title = saf.5.title
+ desc = saf.5.desc
+ picture = GFX_report_event_SAF_troubles_c
+ fire_only_once = yes
+ major = yes
+ trigger = {
+	SAF = { has_country_flag = SAF_1936_election_status_quo
+	}
+	focus_progress = {
+	focus = SAF_economicreform
+	progress > 0.5 }
+	}
+	mean_time_to_happen = { days = 10}
+	option = {
+		name = saf.5.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_civil_war_approach3
+		clr_country_flag = SAF_civil_war_approach2
+		add_popularity = {
+				ideology = vanguard_socialism
+				popularity = 0.1
+			}
+		add_popularity = {
+				ideology = right_authoritarianism
+				popularity = 0.05
+			}
+		add_popularity = {
+				ideology = reactionism
+				popularity = 0.05
+			}
+		add_stability = -0.2
+	}
+}
+
+country_event = { 
+	id = saf.6
+	title = saf.6.t
+	desc = saf.6.d
+	picture = GFX_report_event_SAF_communist_rise
+
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = {
+		name = saf.6.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = { ideology = vanguard_socialism popularity = -0.3 }
+		set_country_flag = communists_rise_saf
+		set_capital = 947
+		SFC = {
+			transfer_state = 681
+			transfer_state = 950
+			transfer_state = 949
+
+			add_state_core = 681
+			add_state_core = 950
+			add_state_core = 949
+		country_event = {
+			id = saf.14
+		}
+		}
+		add_stability = 0.15
+		add_manpower = -10000
+	}
+	option = {
+		name = saf.6.b
+		ai_chance = {
+			factor = 0
+		}
+		add_popularity = { ideology = vanguard_socialism popularity = -0.3 }
+		set_country_flag = communists_rise_saf
+		set_capital = 947
+		SFC = {
+			transfer_state = 681
+			transfer_state = 950
+			transfer_state = 949
+
+			add_state_core = 681
+			add_state_core = 950
+			add_state_core = 949
+			
+			change_tag_from = SAF
+		country_event = {
+			id = saf.14
+		}
+		}
+		add_stability = 0.15
+		add_manpower = -50000
+	}
+}
+country_event = { 
+	id = saf.7
+	title = saf.7.t
+	desc = saf.7.d
+	picture = GFX_report_event_SAF_boer_rise
+
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = {
+		name = saf.7.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = { ideology = right_authoritarianism popularity = -0.3 }
+		set_country_flag = boers_rise_saf
+		set_capital = 947
+		VOL = {
+			transfer_state = 275
+			transfer_state = 954
+			transfer_state = 951
+			transfer_state = 953
+
+			add_state_core = 275
+			add_state_core = 954
+			add_state_core = 951
+			add_state_core = 953
+		country_event = {
+			id = saf.13
+		}
+		}
+		add_stability = 0.15
+		add_manpower = -50000
+	}
+	option = {
+		name = saf.7.b
+		ai_chance = {
+			factor = 0
+		}
+		add_popularity = { ideology = right_authoritarianism popularity = -0.3 }
+		set_country_flag = boers_rise_saf
+		set_capital = 947
+		VOL = {
+			transfer_state = 275
+			transfer_state = 954
+			transfer_state = 951
+			transfer_state = 953
+
+			add_state_core = 275
+			add_state_core = 954
+			add_state_core = 951
+			add_state_core = 953
+			
+			change_tag_from = SAF
+		country_event = {
+			id = saf.13
+		}
+		}
+		add_stability = 0.15
+		add_manpower = -50000
+	}
+}
+country_event = { 
+	id = saf.8
+	title = saf.8.t
+	desc = saf.8.d
+	picture = GFX_report_event_SAF_native_rise
+
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = {
+		name = saf.8.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = { ideology = reactionism popularity = -0.3 }
+		add_popularity = { ideology = despotism popularity = -0.3 }
+		add_popularity = { ideology = libertarian_marxism popularity = -0.3 }
+		set_country_flag = natives_rise_saf
+		set_capital = 947
+		BAC = {
+			transfer_state = 943
+			transfer_state = 719
+			transfer_state = 944
+			transfer_state = 945
+			transfer_state = 541
+
+			add_state_core = 943
+			add_state_core = 719
+			add_state_core = 944
+			add_state_core = 945
+			add_state_core = 541
+			country_event = {
+			id = saf.12
+			}
+		}
+		add_stability = 0.15
+		add_manpower = -50000
+	}
+	option = {
+		name = saf.8.b
+		ai_chance = {
+			factor = 0
+		}
+		add_popularity = { ideology = reactionism popularity = -0.3 }
+		add_popularity = { ideology = despotism popularity = -0.3 }
+		add_popularity = { ideology = libertarian_marxism popularity = -0.3 }
+		set_country_flag = natives_rise_saf
+		set_capital = 947
+		BAC = {
+			transfer_state = 943
+			transfer_state = 719
+			transfer_state = 944
+			transfer_state = 945
+			transfer_state = 541
+
+			add_state_core = 943
+			add_state_core = 719
+			add_state_core = 944
+			add_state_core = 945
+			add_state_core = 541
+			
+			change_tag_from = SAF
+			country_event = {
+			id = saf.12
+			}
+		}
+		add_stability = 0.15
+		add_manpower = -50000
+	}
+}
+country_event = {
+ id = saf.9
+ title = saf.9.title
+ desc = saf.9.desc
+ picture = GFX_report_event_SAF_troubles_d
+ fire_only_once = yes
+ major = yes
+ trigger = {
+ SAF = { has_country_flag = SAF_civil_war_approach3
+	}
+	}
+	mean_time_to_happen = { days = 25}
+	option = {
+		name = saf.9.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_civil_war_on
+		add_stability = -0.2
+		country_event = {
+			id = saf.6
+			days = 10
+			random = 50
+		}
+		country_event = {
+			id = saf.7
+			days = 15
+			random = 50
+		}
+		country_event = {
+			id = saf.8
+			days = 20
+			random = 50
+		}
+		remove_ideas = {
+			SAF_bantu_famine
+			SAF_red_friday
+		}
+	}
+}
+
+country_event = {
+ id = saf.10
+ title = saf.10.title
+ desc = saf.10.desc
+ picture = GFX_report_event_SAF_civil_war
+ fire_only_once = yes
+ major = yes
+ trigger = {
+ SAF = { 
+ has_country_flag = communists_rise_saf
+ has_country_flag = boers_rise_saf
+ has_country_flag = natives_rise_saf
+}
+}
+ mean_time_to_happen = { days = 1}
+	option = {
+		name = saf.10.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_civil_war_ready
+		set_autonomy = {
+			target = SAF
+			autonomy_state = autonomy_free
+		}
+		ENG = {
+		end_puppet = SAF
+		}
+		leave_faction = yes
+	}
+}
+
+country_event = {
+ id = saf.11
+ title = saf.11.title
+ desc = saf.11.desc
+ picture = GFX_report_event_SAF_civil_war_begin
+ fire_only_once = yes
+ major = yes
+ trigger = {
+ SAF = { 
+ has_country_flag = communists_rise_saf
+ has_country_flag = boers_rise_saf
+ has_country_flag = natives_rise_saf
+ has_country_flag = SAF_civil_war_ready
+}
+}
+ mean_time_to_happen = { days = 15}
+	option = {
+		name = saf.11.a
+		ai_chance = { factor = 100}
+		set_country_flag = SAF_civil_war
+		clr_country_flag = SAF_civil_war_on
+		add_stability = 0.2
+		declare_war_on = {
+			target = SFC
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = VOL
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = BAC
+			type = annex_everything
+		}
+		SFC = {
+			declare_war_on = {
+			target = VOL
+			type = annex_everything
+			}
+			declare_war_on = {
+			target = BAC
+			type = annex_everything
+			}
+			declare_war_on = {
+			target = SAF
+			type = annex_everything
+			}
+		}
+		VOL = {
+			declare_war_on = {
+			target = SFC
+			type = annex_everything
+			}
+
+			declare_war_on = {
+			target = BAC
+			type = annex_everything
+			}
+			declare_war_on = {
+			target = SAF
+			type = annex_everything
+			}
+		}
+		BAC = {
+			declare_war_on = {
+			target = VOL
+			type = annex_everything
+			}
+			declare_war_on = {
+			target = SFC
+			type = annex_everything
+			}
+			declare_war_on = {
+			target = SAF
+			type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+ id = saf.12
+ title = saf.12.title
+ desc = saf.12.desc
+ picture = GFX_report_event_SAF_native_army
+ is_triggered_only = yes
+ fire_only_once = yes
+ major = yes
+
+	option = {
+		name = saf.12.a
+		ai_chance = { factor = 100}
+		load_oob = BAC_SACW
+		}
+}
+
+country_event = {
+ id = saf.13
+ title = saf.13.title
+ desc = saf.13.desc
+ picture = GFX_report_event_SAF_boer_army
+ is_triggered_only = yes
+ fire_only_once = yes
+ major = yes
+
+	option = {
+		name = saf.13.a
+		ai_chance = { factor = 100}
+		load_oob = VOL_SACW
+		}
+}
+
+country_event = {
+ id = saf.14
+ title = saf.14.title
+ desc = saf.14.desc
+ picture = GFX_report_event_SAF_communist_army
+ is_triggered_only = yes
+ fire_only_once = yes
+ major = yes
+
+	option = {
+		name = saf.14.a
+		ai_chance = { factor = 100}
+		load_oob = SFC_SACW
+		}
+}
+
+#Early Election events#
+	
+country_event = {
+ id = saf.15
+ title = saf.15.title
+ desc = saf.15.desc
+ picture = GFX_report_event_SAF_election_event_a
+ fire_only_once = yes
+ is_triggered_only = yes
+ major = yes
+
+	option = {
+		name = saf.15.a
+		ai_chance = { factor = 100}
+		}
+}
+
+country_event = {
+ id = saf.16
+ title = saf.16.title
+ desc = saf.16.desc
+ picture = GFX_report_event_SAF_election_event_b
+ fire_only_once = yes
+ is_triggered_only = yes
+ major = yes
+
+	option = {
+		name = saf.16.a
+		ai_chance = { factor = 100}
+		}
+}
+
+country_event = {
+ id = saf.17
+ title = saf.17.title
+ desc = saf.17.desc
+ picture = GFX_report_event_SAF_election_event_c
+ fire_only_once = yes
+ is_triggered_only = yes
+ major = yes
+ 
+	option = {
+		name = saf.17.a
+		ai_chance = { factor = 100}
+		}
+}
+
+country_event = {
+ id = saf.18
+ title = saf.18.title
+ desc = saf.18.desc
+ picture = GFX_report_event_SAF_election_event_d
+ fire_only_once = yes
+ is_triggered_only = yes
+ major = yes
+ 
+	option = {
+		name = saf.18.a
+		ai_chance = { factor = 100}
+		}
+}
+
+country_event = {
+ id = saf.19
+ title = saf.19.title
+ desc = saf.19.desc
+ picture = GFX_report_event_SAF_lions_punishment
+ fire_only_once = yes
+ major = yes
+ trigger = {
+	country_exists = SAF
+	country_exists = VOL
+	country_exists = BAC
+	}
+	option = {
+		name = saf.19.a
+		ai_chance = { factor = 100}
+		}
+}

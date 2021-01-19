@@ -1,0 +1,34 @@
+RUS_okhrana_remove = {
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+	    always = no
+	}
+}
+
+RUS_restore_monarchy_1 = {
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+	    always = no
+	}
+}
+
+RUS_reintegrate_the_governorates = {
+	#icon = GFX_decision_cat_picture_chi_political_support
+	allowed = {
+		original_tag = RUS
+	}
+	visible = {
+		OR = {
+			has_completed_focus = RUS_russian_symphony
+			has_completed_focus = RUS_alt_militarization_nation 
+		}
+	}
+}

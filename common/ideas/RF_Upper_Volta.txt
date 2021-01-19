@@ -1,0 +1,15 @@
+ideas = {
+
+#################
+# Country ideas #
+#################
+
+	country = {
+		UPV_chaos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_low_legitimacy"}
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.30
+			}
+			picture = generic_disjointed_gov
+		}

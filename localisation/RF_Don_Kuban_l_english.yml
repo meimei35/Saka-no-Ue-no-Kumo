@@ -1,0 +1,45 @@
+﻿l_english:
+#COUNTRY NAME#
+
+
+DKB_subject:0 "South Eastern Union"
+#PARTIES#
+DKB_vanguard_socialism_party:0 "Banned"
+DKB_vanguard_socialism_party_long:0 "Rossiyskaya Sotsial-Demokraticheskaya Rabochaya Partiya (Trotskisty) na Yugo-Vostoke"
+
+DKB_libertarian_marxism_party:0 "Banned"
+DKB_libertarian_marxism_party_long:0 "Rossiyskaya Sotsial-Demokraticheskaya Rabochaya Partiya na Yugo-Vostoke"
+
+DKB_revolutionary_anarchism_party:0 "Banned"
+DKB_revolutionary_anarchism_party_long:0 "Organizatsiya Levogo Narodnichestva na Yugo-Vostoke"
+
+DKB_revisionist_socialism_party:0 "PSR"
+DKB_revisionist_socialism_party_long:0 "Partiya Sotsialistov-Revolutsionerov"
+
+DKB_social_democratism_party:0 "TNSP"
+DKB_social_democratism_party_long:0 "Trudovaya Narodno-Sotsialisticheskaya Partiya"
+
+DKB_liberalism_party:0 "Kadety"
+DKB_liberalism_party_long:0 "Konstitutsionnye Demokraty"
+
+DKB_conservatism_party:0 "NDS"
+DKB_conservatism_party_long:0 "Narodno-Demokraticheskiy Soyuz"
+
+DKB_right_authoritarianism_party:0 "Chernomortsy"
+DKB_right_authoritarianism_party_long:0 "Chornomortsi"
+
+DKB_despotism_party:0 "Lineytsy"
+DKB_despotism_party_long:0 "Lineytsy"
+
+DKB_reactionism_party:0 "Collaborationists"
+DKB_reactionism_party_long:0 "Collaborationists"
+
+DKB_accelerationism_party:0 "Scythists"
+DKB_accelerationism_party_long:0 "All-Scythian National Peasant Green Party"
+
+
+#LEADER DESCRITIONS#
+#IDEAS#
+#CUSTOM TOOLTIPS AND FLAGS#
+#DECISIONS (1.5 Update)#
+#FOCUSES#

@@ -1,0 +1,22 @@
+
+state={
+	id=900
+	name="West Kosovo"
+	manpower = 67320 #wrong, idk how many
+
+	state_category = town
+
+	history = {
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = YUG
+		add_core_of = MNT
+	}
+
+	provinces={
+		6940 9849 3922
+	}
+}

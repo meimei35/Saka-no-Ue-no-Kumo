@@ -1,0 +1,180 @@
+RUS_mladorossi_unification = {
+	
+	RUS_south_eastern_union = {
+		cost = 150
+		complete_effect  = {
+			DKB = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_baltics = {
+		cost = 150
+		complete_effect  = {
+			WRU = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_finland = {
+		cost = 150
+		complete_effect  = {
+			FIN = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_orenburg = {
+		cost = 150
+		complete_effect  = {
+			ORE = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_steppes = {
+		cost = 150
+		available = {
+			ORE = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			STE = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_turkestan = {
+		cost = 150
+		available = {
+			ORE = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			TRK = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_siberia = {
+		cost = 150
+		complete_effect  = {
+			SIB = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_yakutsk = {
+		cost = 150
+		available = {
+			SIB = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			KCK = {
+				country_event = {
+					id = russia.13
+				}
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_altay = {
+		cost = 150
+		available = {
+			SIB = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = ALT
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_tuva = {
+		cost = 150
+		available = {
+			SIB = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = TAN
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_baikal = {
+		cost = 150
+		available = {
+			SIB = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = MO2
+			}
+		}
+		fire_only_once = yes
+	}
+
+	RUS_yellowrussia = {
+		cost = 150
+		available = {
+			SIB = {
+				exists = no
+			}
+			KCK = {
+				exists = no
+			}
+		}
+		complete_effect  = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = ZHR
+			}
+		}
+		fire_only_once = yes
+	}
+}

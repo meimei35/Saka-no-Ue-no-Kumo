@@ -1,0 +1,198 @@
+##########
+#Greece
+##########
+
+ideas = {
+
+###############
+#Starting Ideas
+###############
+
+country = {
+
+GRE_ECONOMIC_COLLAPSE = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_ECONOMIC_COLLAPSE"}
+			picture = WIP
+			modifier = { consumer_goods_factor = 0.20 }
+		}
+		
+		
+###########
+#Foci Ideas
+###########
+	
+GRE_PRODUCTION = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_PRODUCTION"}
+			picture = WIP
+			modifier = { industrial_capacity_factory = 0.1 }
+		}	
+
+GRE_NATIONALIZATION = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_NATIONALIZATION"}
+			picture = WIP
+			modifier = { 
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			production_factory_max_efficiency_factor = -0.1
+			}
+		}
+
+GRE_RESOURCES = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_RESOURCES"}
+			picture = WIP
+			modifier = { 
+			consumer_goods_factor = -0.05
+			production_oil_factor = 0.1
+			local_resources_factor = 0.10
+			}
+		}
+
+GRE_ECONOMIC_COLLAPSE_2 = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_ECONOMIC_COLLAPSE_2"}
+			picture = WIP
+			modifier = { 
+			consumer_goods_factor = 0.10
+			stability_factor = 0.05
+			}
+		}
+
+GRE_LIBERAL = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_LIBERAL"}
+			picture = WIP
+			modifier = { 
+			consumer_goods_factor = -0.05
+			political_power_factor = 0.25
+			production_factory_max_efficiency_factor = 0.15
+			}
+		}		
+		
+GRE_AGRICULTURE = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_AGRICULTURE"}
+			picture = WIP
+			modifier = { 
+			stability_factor = 0.05
+			MONTHLY_POPULATION = 0.15
+			}
+		}			
+		
+GRE_TOURISM = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_TOURISM"}
+			picture = WIP
+			modifier = { 
+			trade_opinion_factor = 0.25
+			consumer_goods_factor = -0.05
+			}
+		}
+
+GRE_MIRACLE = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_MIRACLE"}
+			picture = WIP
+			modifier = { 
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.05
+			local_resources_factor = 0.10
+			}
+		}
+
+GRE_STAFF = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_STAFF"}
+			picture = WIP
+			modifier = { 
+			command_power_gain = 0.25
+			}
+		}
+
+GRE_SPEEDWAR = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_SPEEDWAR"}
+			picture = WIP
+			modifier = { 
+			army_speed_factor = 0.10
+			}
+		}
+
+GRE_SOLDIER = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_SOLDIER"}
+			picture = WIP
+			modifier = { 
+			army_org_factor = 0.05
+			}
+		}
+GRE_PLANNING = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_PLANNING"}
+			picture = WIP
+			modifier = { 
+			planning_speed = 0.10
+			}
+		}	
+		
+GRE_LIGHTNING = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_LIGHTNING"}
+			picture = WIP
+			modifier = { 
+			land_reinforce_rate = 0.25
+			}
+		}
+GRE_SUPPLY = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_SUPPLY"}
+			picture = WIP
+			modifier = { 
+			attrition = -0.15
+			}
+		}
+
+GRE_NEWARMY = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_NEWARMY"}
+			picture = WIP
+			modifier = { 
+			conscription = 0.025
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
+			}
+		}	
+
+
+GRE_OFFENSIVE = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_OFFENSIVE"}
+			picture = WIP
+			modifier = { 
+				army_bonus_air_superiority_factor = 0.15
+			}
+		}
+		
+GRE_DEFENSIVE = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_DEFENSIVE"}
+			picture = WIP
+			modifier = { 
+				air_interception_attack_factor = 0.15
+			}
+		}
+		
+GRE_NEWAIRFORCE = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_NEWAIRFORCE"}
+			picture = WIP
+			modifier = { 
+				experience_gain_air = 0.10
+				air_accidents_factor = -0.1
+			}
+		}
+
+GRE_DOCKYARD = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_DOCKYARD"}
+			picture = WIP
+			modifier = { 
+			industrial_capacity_dockyard = 0.15
+			}
+		}
+
+GRE_RULING_THE_SEA = {
+on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_RULING_THE_SEA"}
+			picture = WIP
+			modifier = { 
+			industrial_capacity_dockyard = 0.05
+			naval_coordination = 0.10
+			}
+		}		
+		
+	}
+}

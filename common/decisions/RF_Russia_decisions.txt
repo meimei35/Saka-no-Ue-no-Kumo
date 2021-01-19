@@ -1,0 +1,423 @@
+RUS_restore_monarchy_1 = {
+
+	RUS_zemsky_sobor_1 = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = RUS }
+
+		available = {
+			owns_state = 195
+		}
+
+		visible = {
+			owns_state = 195
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 10
+
+		modifier = {
+		}
+
+		days_remove = 140
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove "
+			set_country_flag = FOP_PROGRESO_NORTH_ONE_COMPLETED
+		}
+	}
+}
+
+RUS_okhrana_remove = {
+
+	RUS_remove_trufanov_1 = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = RUS }
+
+		available = {
+			owns_state = 195
+		}
+
+		visible = {
+			owns_state = 195
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 10
+
+		modifier = {
+		}
+
+		days_remove = 140
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove "
+			set_country_flag = FOP_PROGRESO_NORTH_ONE_COMPLETED
+		}
+	}
+	RUS_remove_purishkevich_1 = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = RUS }
+
+		available = {
+			owns_state = 195
+		}
+
+		visible = {
+			owns_state = 195
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 10
+
+		modifier = {
+		}
+
+		days_remove = 140
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove "
+			set_country_flag = FOP_PROGRESO_NORTH_ONE_COMPLETED
+		}
+	}
+	RUS_remove_kazembek_1 = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = RUS }
+
+		available = {
+			owns_state = 195
+		}
+
+		visible = {
+			owns_state = 195
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 10
+
+		modifier = {
+		}
+
+		days_remove = 140
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove "
+			set_country_flag = FOP_PROGRESO_NORTH_ONE_COMPLETED
+		}
+	}
+
+}
+
+RUS_reintegrate_the_governorates = {
+	RUS_annex_baltics = {
+
+		#icon = #need to add
+
+		allowed = { OR = {  original_tag = RUS } }
+		available = {
+			has_war = no
+			WRU = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			hidden_trigger = { original_tag = RUS }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 300
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			WRU = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_don = {
+
+		#icon = #
+
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			DKB = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 350
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			DKB = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_sib = {
+
+		#icon = #
+
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			SIB = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 500
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			SIB = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_orenburg = {
+
+		#icon = #
+		
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			ORE = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 300
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			ORE = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_yakut = {
+
+		#icon = #
+
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			KCK = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			SIB = { exists = no }
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 200
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			KCK = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_steppe = {
+
+		#icon = #
+
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			STE = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			ORE = { exists = no }
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 250
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			STE = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_turk = {
+
+		#icon = #
+
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			TRK = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			ORE = { exists = no }
+			STE = { exists = no }
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 200
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			TRK = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+	RUS_annex_finland = {
+
+		#icon = #
+
+		allowed = { original_tag = RUS }
+		available = {
+			has_war = no
+			FIN = {
+				is_subject_of = ROOT
+				exists = yes
+			}
+			hidden_trigger = {OR = {  original_tag = RUS } }
+		}
+		visible = { original_tag = RUS always = no }
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		cost = 1000
+
+		modifier = {
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		is_good = yes
+
+		remove_effect = {
+			FIN = {
+				country_event = {
+					id = russia.23
+				}
+			}
+		}
+	}
+}

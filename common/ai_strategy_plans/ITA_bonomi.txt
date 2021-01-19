@@ -1,0 +1,12 @@
+Bonomi_path = {
+	enable = {
+		original_tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_route
+			option = BONOMI
+		}
+	}
+	ai_national_focuses = {
+
+	}
+}

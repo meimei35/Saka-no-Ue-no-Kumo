@@ -1,0 +1,9 @@
+RUS_mladorossi_unification = {
+	allowed = {
+		original_tag = RUS
+	}
+	priority = 100
+	visible = {
+		has_completed_focus = RUS_unify_the_empire
+	}
+}

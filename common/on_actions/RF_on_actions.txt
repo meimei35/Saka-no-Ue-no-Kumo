@@ -1,0 +1,118 @@
+on_actions = {
+	#Starting events
+	on_startup = {
+		effect = {
+			BRA = {
+				country_event = {
+					id = brazil.1
+					days = 2
+				}
+			}
+			MO2 = {
+				country_event = { id = mo2.101 days = 1 }
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = show_welcome_splash
+			}
+
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = {
+					id = news.9
+					days = 629
+				}
+			}
+
+			AUS = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = AUS_ai_route
+							option = RANDOM
+						}
+					}
+					random_list = {
+						80 = { AUS = { set_country_flag = AUS_ai_path_1 } }
+						20 = { AUS = { set_country_flag = AUS_ai_path_2 } }
+					}
+				}
+			}
+
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = { 
+				limit = {
+					OR = {
+						tag = SPA
+					}
+					has_global_flag = spain_cw
+					NOT = { has_global_flag = scw_over}
+				}
+				SPR = { country_event = { id = spain.7 }}
+				FAL = { country_event = { id = spain.7 }}
+				CNT = { country_event = { id = spain.7 }}
+			}
+			if = { 
+				limit = {
+					OR = {
+						tag = SPR
+					}
+					has_global_flag = spain_cw
+					NOT = { has_global_flag = scw_over}
+				}
+				SPA = { country_event = { id = spain.8 }}
+				FAL = { country_event = { id = spain.8 }}
+				CNT = { country_event = { id = spain.8 }}
+			}
+			if = { 
+				limit = {
+					OR = {
+						tag = CNT
+					}
+					has_global_flag = spain_cw
+					NOT = { has_global_flag = scw_over}
+				}
+				SPR = { country_event = { id = spain.9 }}
+				FAL = { country_event = { id = spain.9 }}
+				SPA = { country_event = { id = spain.9 }}
+			}
+			if = { 
+				limit = {
+					OR = {
+						tag = FAL
+					}
+					has_global_flag = spain_cw
+					NOT = { has_global_flag = scw_over}
+				}
+				SPR = { country_event = { id = spain.10 }}
+				SPA = { country_event = { id = spain.10 }}
+				CNT = { country_event = { id = spain.10 }}
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = GER }
+					tag = FRA
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = {
+						id = news.100
+					}
+				}
+			}
+		}
+	}
+}

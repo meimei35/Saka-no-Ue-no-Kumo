@@ -1,0 +1,61 @@
+#####################
+#	Mantetsu - Baba	#
+#####################
+
+ideas = {
+	country = {
+		MAN_corporate_playground = {
+			picture = jap_zaibatsu
+			removal_cost = -1
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				consumer_goods_factor = -0.07
+				stability_factor = -0.12
+			}
+		}
+		MAN_manchurian_guerillas = {
+			picture = chi_army_corruption2
+			removal_cost = -1
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				political_power_gain = -0.2
+				army_org_factor = -0.04
+				army_core_attack_factor = -0.08
+				army_core_defence_factor = -0.08
+			}
+		}
+		MAN_kwantung_abuses = {
+			picture = chi_war_of_resistance2
+			removal_cost = -1
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.05
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				
+			}
+		}
+		MAN_harbin_refugees = {
+			picture = prc_low_popular_support2
+			removal_cost = -1
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.1
+				conscription_factor = 0.01
+			}
+		}
+	}
+}

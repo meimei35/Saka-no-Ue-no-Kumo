@@ -1,0 +1,13 @@
+Japan_communist = {
+	enable = {
+		original_tag = JPR
+		has_game_rule = {
+			rule = JAP_ai_route
+			option = REVOLUTION
+		}
+	}
+
+	ai_national_focuses = {
+		#Highest Priority first
+	}
+}

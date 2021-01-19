@@ -1,0 +1,209 @@
+
+vanguard_socialism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+libertarian_marxism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+radical_socialist_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+revisionist_socialism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+social_democratism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+liberalism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+conservatism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+right_authoritarianism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+despotism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+reactionism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}
+
+accelerationism_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = RF_ideology_allowed
+		OR = {
+			has_government = vanguard_socialism
+			has_government = libertarian_marxism
+			has_government = revolutionary_anarchism
+			has_government = revisionist_socialism
+			has_government = social_democratism
+			has_government = liberalism
+			has_government = conservatism
+			has_government = right_authoritarianism
+			has_government = despotism
+			has_government = reactionism
+			has_government = accelerationism
+		}
+	}
+}

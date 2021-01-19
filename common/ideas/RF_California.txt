@@ -1,0 +1,22 @@
+ideas = {
+
+#################
+# Country ideas #
+#################
+
+	country = {
+
+		CAL_aneweconomy = {
+		#picture = 
+			modifier = {
+			}
+		}
+		CAL_astrangearmy = {
+		#picture = 
+			modifier = {
+			}
+		}
+	
+	}#END OF COUNTRY IDEAS
+
+}#END OF IDEAS

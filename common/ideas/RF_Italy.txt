@@ -1,0 +1,719 @@
+##############
+# Italy #
+##############
+ideas = {
+
+	#################
+	# Country ideas #
+	#################
+
+	country = {
+
+		# Starting #
+
+		ITA_pudi_hegemony = {
+			removal_cost = -1 
+			picture = ITA_pudi_hegemony
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = 0.6
+			}
+		}
+	    ITA_the_slump = {
+			removal_cost = -1 
+			picture = GFX_ITA_the_slump
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.3
+			}
+		}
+		ITA_fuzzy_economic_complication = {
+			removal_cost = -1 
+			picture = ITA_fuzzy_economic_complications
+			allowed = {
+				original_tag = ITA
+			}
+		}
+	    ITA_ineffective_military = {
+			removal_cost = -1 
+			picture = ITA_ineffective_military
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				army_org = -0.3
+				army_morale_factor = -0.2
+				army_defence_factor = -0.15
+				army_attack_factor = -0.15
+			}
+		}
+		ITA_overburdened_administration = {
+			removal_cost = -1 
+			picture = ITA_overburdened_buerocracy
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				consumer_goods_factor = 0.07
+				political_power_gain = -0.5
+			}
+		}
+		ITA_bulwark_of_democracy = {
+			removal_cost = -1 
+			picture = ITA_Bulwark_of_Democracy
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_factor = 0.05
+			}
+		}
+		ITA_victor_emmanuel = {
+			removal_cost = -1 
+			picture = ITA_victor_emmanuel_iii
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor	= 0.1
+			}
+		}
+		ITA_the_libyan_war = {
+			removal_cost = -1 
+			picture = ITA_the_libyian_war
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				war_support_factor	= -0.2
+				weekly_manpower	= -75
+			}
+		}
+		ITA_lagging_south = {
+			removal_cost = -1 
+			picture = ITA_lagging_south
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				conscription_factor = -0.15
+			}
+		}
+	}
+
+	#############
+	# Ministers #
+	#############
+
+	head_of_government = {
+		ITA_hog_Ivanoe_Bonomi = {
+			picture = ITA_hog_Ivanoe_Bonomi
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Ivanoe Bonomi"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				head_of_government
+				hog_ambitious_union_boss
+			}
+		}
+		ITA_hog_Luigi_Struzo = {
+			picture = ITA_hog_Luigi_Struzo
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Luigi Sturzo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				head_of_government
+				hog_silent_workhorse
+			}
+		}
+		ITA_hog_Italo_Balbo = {
+			picture = ITA_hog_Italo_Balbo
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Italo Balbo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				head_of_government
+				hog_backroom_backstabber
+			}
+		}
+		ITA_hog_Francesco_Nitti = {
+			picture = ITA_hog_Francesco_Nitti
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Francesco Saverio Nitti"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				head_of_government
+				hog_political_protege
+			}	
+		}
+	}
+	foreign_minister = {
+		ITA_for_Carlo_Sforza = {
+			picture = ITA_for_Carlo_Sforza
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Ivanoe Bonomi"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+			}	
+		}
+		ITA_for_Pietro_Torretta = {
+			picture = ITA_for_Pietro_Torretta
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Luigi Sturzo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+			}	
+		}
+		ITA_for_Giuseppe_Bastanini = {
+			picture = ITA_for_Giuseppe_Bastanini
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Italo Balbo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				foreign_minister
+				for_general_staffer
+			}	
+		}
+		ITA_for_Ugo_La_Malfa = {
+			picture = ITA_for_Ugo_La_Malfa
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Francesco Saverio Nitti"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				foreign_minister
+				for_great_compromiser
+			}	
+		}
+	}
+	economy_minister = {
+		ITA_eco_Alberto_Beneduce = {
+			picture = ITA_eco_Alberto_Beneduce
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Ivanoe Bonomi"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				economy_minister
+				eco_reformer
+			}	
+		}
+		ITA_eco_Luigi_Facta = {
+			picture = ITA_eco_Luigi_Facta
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Luigi Sturzo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				economy_minister
+				eco_balanced_budget_economy
+			}	
+		}
+		ITA_eco_Roberto_Farinacci = {
+			picture = ITA_eco_Roberto_Farinacci
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Italo Balbo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				economy_minister
+				eco_military_entrepreneur
+			}	
+		}
+		ITA_eco_Bruno_Visentini = {
+			picture = ITA_eco_Bruno_Visentini
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Francesco Saverio Nitti"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				economy_minister
+				eco_industrialiser
+			}	
+		}
+	}
+	security_minister = {
+		ITA_sec_Vittorio_Orlando = {
+			picture = ITA_sec_Vittorio_Orlando
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Ivanoe Bonomi"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				security_minister
+				sec_man_of_the_people
+			}	
+		}
+		ITA_sec_Alcide_De_Gasperi = {
+			picture = ITA_sec_Alcide_De_Gasperi
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Luigi Sturzo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				security_minister
+				sec_man_of_the_people
+			}	
+		}
+		ITA_sec_Alessandro_Pavolini = {
+			picture = ITA_sec_Alessandro_Pavolini
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Italo Balbo"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}	
+		}
+		ITA_sec_Ferruccio_Parri = {
+			picture = ITA_sec_Ferruccio_Parri
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_leader = {
+				    name = "Francesco Saverio Nitti"
+				    ruling_only = yes
+				}
+			}
+			traits = {
+				security_minister
+				sec_media_magnate
+			}	
+		}
+	}
+	head_of_intel = {
+		ITA_int_Emilio_de_Bono = {
+			picture = ITA_int_Emilio_de_Bono
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_flag = ITA_ln_victory
+			}
+			traits = {
+				head_of_intel
+				int_logistics_specialist
+			}	
+		}
+		ITA_int_Randolfo_Pacciardi = {
+			picture = ITA_int_Randolfo_Pacciardi
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_country_flag = ITA_pri_victory
+			}
+			traits = {
+				head_of_intel
+				int_logistics_specialist
+			}	
+		}
+		ITA_int_Emilio_Lussu = {
+			picture = ITA_int_Emilio_Lussu
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_pri_victory
+					has_country_flag = ITA_pudi_stays
+				}
+			}
+			traits = {
+				head_of_intel
+				int_political_specialist
+			}	
+		}
+		ITA_int_Fernando_Tambroni = {
+			picture = ITA_int_Fernando_Tambroni
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ln_victory
+					has_country_flag = ITA_pudi_stays
+				}
+			}
+			traits = {
+				head_of_intel
+				int_dismal_enigma
+			}	
+		}
+	}
+
+	#############
+	# Companies #
+	#############
+
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		fiat = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	
+	
+	weapons_manufacturer = {
+			
+		designer = yes
+		
+		beretta = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		lancia = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		breda = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	
+	air_naval_manufacturer = {	
+		
+		designer = yes
+		
+		crda = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+		
+		
+		macchi = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		savoia_marchetti = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		caproni = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+		
+		piaggio = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+	}
+	
+	industrial_concern = {
+		
+		danieli = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			
+			traits = { industrial_concern }
+		}		
+	}
+	
+	theorist = {	
+		giovanni_messe = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
+		rodolfo_graziani = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+			
+			traits = { grand_battle_plan_expert }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		
+		guiseppe_fioravanzo = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_fleet_in_being = 0.15
+			}
+			
+			traits = { grand_fleet_proponent }
+		}
+		
+		angelo_iachino = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		amedeo_mecozzi = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
+			
+			traits = { assault_avaition }
+		}
+		
+		renato_sandalli = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		gaetano_crocco = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}
+}

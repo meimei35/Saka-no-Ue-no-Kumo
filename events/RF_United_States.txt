@@ -1,0 +1,1276 @@
+###########################
+# USA Events
+###########################
+
+add_namespace = usa
+
+###### 1936 Election ######
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.1.a
+		load_focus_tree = {
+			tree = USA_cutting
+			keep_completed = yes
+		}
+		set_politics = {
+			ruling_party = liberalism
+		}
+		create_country_leader = {
+			name = "Bronson Murray Cutting"
+			#desc = "politics_andrew_mellon_desc"
+			picture = "Portrait_Bronson_Murray_Cutting.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+				##
+			}
+		}
+		hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = {
+						id = news.16
+						days = 3
+					}
+				}
+			}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = USA_ai_route
+					option = REPUBLICANS
+				}
+			}
+		}
+	}
+	option = {
+		name = usa.1.b
+		load_focus_tree = {
+			tree = USA_moody
+			keep_completed = yes
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
+		hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = {
+						id = news.17
+						days = 3
+					}
+				}
+			}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = USA_ai_route
+					option = AMERICANS
+				}
+			}
+		}
+	}
+	option = {
+		name = usa.1.c
+		create_country_leader = {
+			name = "Fiorello La Guardia"
+			#desc = "politics_andrew_mellon_desc"
+			picture = "Portrait_Fiorello_La_Guardia.dds"
+			expire = "1965.1.1"
+			ideology = progressivism
+			traits = {
+				##
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = USA_work_with_republicans
+			}
+			set_party_name = { 
+				ideology = social_democratism 
+				long_name = USA_social_democratism_party_second 
+				name = USA_social_democratism_party_second 
+			}
+		}
+		hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = {
+						id = news.18
+						days = 3
+					}
+				}
+			}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = USA_ai_route
+					option = PROGRESSIVES
+				}
+			}
+		}
+	}
+	option = {
+		name = usa.1.d
+		load_focus_tree = {
+			tree = USA_technocracy
+			keep_completed = yes
+		}
+		set_politics = {
+			ruling_party = accelerationism
+		}
+		hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = {
+						id = news.19
+						days = 3
+					}
+				}
+			}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = USA_ai_route
+					option = TECHNOCRACTS
+				}
+			}
+		}
+	}
+}
+
+#Ismay Insensé
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.2.a
+		add_stability = 0.03
+	}
+	
+	option = {
+		name = usa.2.b
+		if = {
+			limit = {
+				has_government = social_democratism
+			}
+			add_popularity = {
+				ideology = social_democratism
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				has_government = liberalism
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				has_government = conservatism
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				has_government = right_authoritarianism
+			}
+			add_popularity = {
+				ideology = right_authoritarianism
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				has_government = reactionism
+			}
+			add_popularity = {
+				ideology = reactionism
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				has_government = despotism
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = -0.02
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.3.a
+    }
+}
+
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.4.a
+    }
+}
+
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.5.a
+    }
+}
+
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.6.a
+		country_event = {
+            id = usa.7
+            days = 10
+            }
+    }
+    option = {
+		name = usa.6.b
+		country_event = {
+            id = usa.8
+            days = 10
+            }
+    }
+}
+
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.7.a
+		add_popularity = {
+            ideology = liberalism
+            popularity = 0.05
+        }
+    }
+
+option = {
+		name = usa.8.a
+		retire_country_leader = yes
+		create_country_leader = {
+	        name = "Charles G Dawes"
+	        desc = "POLITICS_Charles_Dawes_DESC"
+	        picture = "USA_Charles_G_Dawes.dds"
+	        expire = "1965.1.1"
+	        ideology = social_liberalism
+        }
+        add_popularity = {
+            ideology = social_democratism
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = accelerationism
+            popularity = 0.05
+        }
+    }
+}
+
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.7.a
+		add_popularity = {
+            ideology = liberalism
+            popularity = 0.05
+        }
+    }
+}
+
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.9.a
+    }
+    option = {
+		name = usa.9.b
+    }
+}
+
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.10.a
+		country_event = {
+            id = usa.11
+            days = 10
+            }
+    }
+}
+
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.11.a
+    }
+}
+
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.12.a
+    }
+}
+
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.13.a
+    }
+}
+
+country_event = {
+	id = usa.14
+	title = usa.14.t
+	desc = usa.14.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.14.a
+		country_event = { id = usa.15 }
+    }
+    option = {
+		name = usa.14.b
+		country_event = { id = usa.15 }
+    }
+}
+
+country_event = {
+	id = usa.15
+	title = usa.15.t
+	desc = usa.15.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.15.a
+		random_list = {
+			50 = { country_event = { id = usa.16 } }
+			50 = { country_event = { id = usa.17 } }
+		}
+    }
+}
+
+country_event = {
+	id = usa.16
+	title = usa.16.t
+	desc = usa.16.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.16.a
+    }
+}
+
+country_event = {
+	id = usa.17
+	title = usa.17.t
+	desc = usa.17.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.17.a
+    }
+}
+
+country_event = {
+	id = usa.18
+	title = usa.18.t
+	desc = usa.18.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.18.a
+		country_event = { id = usa.19 }
+    }
+    option = {
+		name = usa.18.b
+		country_event = { id = usa.20 }
+    }
+    option = {
+		name = usa.18.c
+		country_event = { id = usa.21 }
+    }
+}
+
+country_event = {
+	id = usa.19
+	title = usa.19.t
+	desc = usa.19.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.19.a
+		country_event = { id = usa.22 }
+    }
+}
+
+country_event = {
+	id = usa.20
+	title = usa.20.t
+	desc = usa.20.d
+
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.20.a
+		country_event = { id = usa.22 }
+    }
+}
+
+country_event = {
+	id = usa.21
+	title = usa.21.t
+	desc = usa.21.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.21.a
+		country_event = { id = usa.22 }
+    }
+}
+
+country_event = {
+	id = usa.22
+	title = usa.22.t
+	desc = usa.22.d
+ 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.22.a
+    }
+}
+country_event = {
+	id = usa.23
+	title = usa.23.t
+	desc = usa.23.d
+	picture = GFX_report_event_white_charlie
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.23.a
+    }
+}
+
+# Blood on the sheets #
+country_event = {
+	id = usa.24
+	title = usa.24.t
+	desc = usa.24.d
+	picture = GFX_report_event_blood_on_the_sheets
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.24.a
+		hidden_effect = {
+			country_event = {
+				id = usa.25
+				days = 10
+			}
+		}
+    }
+}
+
+# Mystery deepens #
+country_event = {
+	id = usa.25
+	title = usa.25.t
+	desc = usa.25.d
+	picture = GFX_report_event_mystery_deepens
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.25.a
+		hidden_effect = {
+			country_event = {
+				id = usa.26
+				days = 2
+			}
+		}
+    }
+}
+
+# Revelations #
+country_event = {
+	id = usa.26
+	title = usa.26.t
+	desc = usa.26.d
+	picture = GFX_report_event_revelations
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.26.a
+		hidden_effect = {
+			country_event = {
+				id = usa.27
+				days = 20
+			}
+		}
+    }
+}
+
+# Shoots in the dark #
+country_event = {
+	id = usa.27
+	title = usa.27.t
+	desc = usa.27.d
+	picture = GFX_report_event_shoots_in_dark
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.27.a
+		hidden_effect = {
+			country_event = {
+				id = usa.28
+				days = 7
+			}
+		}
+    }
+}
+
+# Sweet Georgia #
+country_event = {
+	id = usa.28
+	title = usa.28.t
+	desc = usa.28.d
+	picture = GFX_report_event_sweet_georgia
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.28.a
+		hidden_effect = {
+			country_event = {
+				id = usa.29
+				days = 3
+			}
+		}
+    }
+}
+
+# Letter #
+country_event = {
+	id = usa.29
+	title = usa.29.t
+	desc = usa.29.d
+	picture = GFX_report_event_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.29.a
+    }
+}
+
+###### Topple Cuba ######
+country_event = {
+	id = usa.44
+	title = usa.44.title
+	desc = usa.44.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.44.a
+		CUB = {
+			add_timed_idea = {
+    			idea = USA_sabotage
+    			days = 900
+			}
+		}
+	}
+	option = {
+		name = usa.44.b
+		CUB = {
+			start_civil_war = {
+				ideology = liberalism
+				size = 0.4
+			}
+		}
+	}
+}
+
+###### Montreal Conference ######
+country_event = {
+	id = usa.45
+	title = usa.45.title
+	desc = usa.45.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.45.a
+	}
+}
+
+###### Ultimatum to Japan ######
+country_event = {
+	id = usa.46
+	title = usa.46.title
+	desc = usa.46.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.46.a
+		if = {
+			limit = {
+				OR = {
+					JAP = {
+						owns_state = 646
+					}
+					JPR = {
+						owns_state = 646
+					}
+				}
+			}
+			transfer_state = 646
+		}
+		if = {
+			limit = {
+				OR = {
+					JAP = {
+						owns_state = 684
+					}
+					JPR = {
+						owns_state = 684
+					}
+				}
+			}
+			transfer_state = 684
+		}
+		if = {
+			limit = {
+				OR = {
+					JAP = {
+						owns_state = 647
+					}
+					JPR = {
+						owns_state = 647
+					}
+				}
+			}
+			transfer_state = 647
+		}
+		if = {
+			limit = {
+				OR = {
+					JAP = {
+						owns_state = 633
+					}
+					JPR = {
+						owns_state = 633
+					}
+				}
+			}
+			transfer_state = 633
+		}	
+	}
+	option = {
+		name = usa.46.b
+		USA = {
+			add_state_claim = 646
+			add_state_claim = 684
+			add_state_claim = 647
+			add_state_claim = 633
+		}
+	}
+}
+
+###### Step 1: Guatemala ######
+country_event = {
+	id = usa.47
+	title = usa.47.title
+	desc = usa.47.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.47.a
+		GUA = {
+			country_event = {
+				id = usa.50
+			}
+		}
+    }
+}
+
+###### guatemalan revolt succeeds ######
+country_event = {
+	id = usa.48
+	title = usa.48.title
+	desc = usa.48.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.48.a
+		annex_country = {
+    		target = GUA
+    		transfer_troops = yes
+		}
+    }
+}
+
+###### guatemalan revolt fails ######
+country_event = {
+	id = usa.49
+	title = usa.49.title
+	desc = usa.49.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.49.a
+    }
+}
+
+###### Central American Coups ######
+country_event = {
+	id = usa.50
+	title = usa.50.title
+	desc = usa.50.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.50.a
+		USA = {
+			country_event = {
+				id = usa.48
+				days = 7
+			}
+		}
+    }
+
+	option = {
+		name = usa.50.b
+		USA = {
+			country_event = {
+				id = usa.49
+				days = 7
+			}
+		}
+    }
+}
+
+###### Work with Peru ######
+country_event = {
+	id = usa.51
+	title = usa.51.title
+	desc = usa.51.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.51.a
+		USA = {
+			give_guarantee = PRU
+		}
+    }
+}
+
+###### Accelerationists in Quebec ######
+country_event = {
+	id = usa.52
+	title = usa.52.title
+	desc = usa.52.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.52.a
+    }
+}
+
+###### Disney's cartoon ######
+country_event = {
+	id = usa.53
+	title = usa.53.title
+	desc = usa.53.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.53.a
+    }
+}
+
+###### NAT is formed ######
+country_event = {
+	id = usa.54
+	title = usa.54.title
+	desc = usa.54.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.54.a
+    }
+}
+##### Johnny Got His Gun #####
+country_event = {
+	id = usa.55
+	title = usa.55.title
+	desc = usa.55.desc
+	picture = GFX_report_event_johnny_got_his_gun
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.55.a
+    }
+}
+
+country_event = {
+	id = usa.56
+	title = usa.56.title
+	desc = usa.56.desc
+	#picture = GFX_report_event_johnny_got_his_gun
+	
+	is_triggered_only = yes	
+	fire_only_once = no
+	
+	option = {
+		name = usa.56.a
+		ai_chance = { factor = 6 }
+		USA = { add_to_faction = ROOT }
+    }
+    option = {
+		name = usa.56.b
+		ai_chance = { factor = 4 }
+		add_political_power = 20
+		add_stability = 0.05
+    }
+}
+
+###### America sends aid to Liberia ######
+country_event = {
+	id = usa.321
+	title = usa.321.title
+	desc = usa.321.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa.321.a
+
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 600
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = support_equipment_1
+		    amount = 200
+		    producer = USA
+		}
+		add_manpower = 13420
+    }
+}
+
+####### This is a test #######
+country_event = {
+	id = usa.999
+	title = usa.999.t
+	desc = usa.999.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.999.a
+		load_focus_tree = {
+			tree = USA_cutting
+			keep_completed = yes
+		}
+	}
+	option = {
+		name = usa.999.b
+		load_focus_tree = {
+			tree = USA_moody
+			keep_completed = yes
+		}
+	}
+	option = {
+		name = usa.999.c
+		load_focus_tree = {
+			tree = USA_la_guardia
+			keep_completed = yes
+		}
+	}
+	option = {
+		name = usa.999.d
+		load_focus_tree = {
+			tree = USA_technocracy
+			keep_completed = yes
+		}
+	}
+
+option = {
+		name = usa.999.e
+		load_focus_tree = {
+			tree = USA_anarchist
+			keep_completed = yes
+		}
+	}
+}
+country_event = {
+	id = usa.1337
+	title = usa.1337.title
+	desc = usa.1337.desc
+	picture = GFX_report_event_johnny_got_his_gun
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.1337.a
+		1044 = { 
+			NAV = { transfer_state = PREV }
+		}
+		1044 = {
+			add_core_of = NAV
+		}
+		hidden_effect = {
+			NAV = {
+				load_oob = "NAV_1936"
+			}
+			set_province_name = {
+				id = 6897
+				name = "Tségháhoodzání"
+			}
+		}
+		1046 = { 
+			JEF = { transfer_state = PREV }
+		}
+		1046 = {
+			add_core_of = JEF
+		}
+		hidden_effect = {
+			JEF = {
+				load_oob = "JEF_1936"
+			}
+		}
+		SEG = {
+			transfer_state = 1047
+			transfer_state = 385
+			transfer_state = 386
+			transfer_state = 387
+			add_state_core = 1047
+			add_state_core = 385
+			add_state_core = 386
+			add_state_core = 387
+			load_oob = "SEG_1936"
+		}
+		WYO = {
+			transfer_state = 388
+			transfer_state = 381
+			add_state_core = 388
+			add_state_core = 381
+			load_oob = "WYO_1936"
+		}
+		TEX = {
+			transfer_state = 375
+            transfer_state = 1045
+            add_state_core = 375
+            add_state_core = 1045
+            load_oob = "TEX_1936"
+		}
+		MEX = {
+			transfer_state = 1050
+			add_state_core = 1050
+		}
+		LOU = {
+			transfer_state = 371
+			transfer_state = 372
+			load_oob = "LOU_1936"
+		}
+		DST = {
+            transfer_state = 380
+            transfer_state = 379
+            add_state_core = 380
+            add_state_core = 379
+            load_oob = "DES_1936"
+        }
+		CAL = {
+            transfer_state = 378
+            add_state_core = 378
+            add_state_core = 1046
+            load_oob = "CAL_1936"
+        }		
+		PHX = {
+            transfer_state = 377
+            add_state_core = 377
+            add_state_core = 1044
+            load_oob = "PHX_1936"
+        }
+		MCO = {
+            transfer_state = 382
+            add_state_core = 382
+            add_state_core = 376
+			transfer_state = 376
+            load_oob = "COL_1936"
+        }
+		OKL = {
+            transfer_state = 374
+            add_state_core = 374
+            load_oob = "OKL_1936"
+        }
+		MOS = {
+            transfer_state = 373
+            add_state_core = 373
+            load_oob = "MOS_1936"
+        }
+		DIX = {
+            transfer_state = 368
+            add_state_core = 368
+            transfer_state = 363
+            add_state_core = 363
+            transfer_state = 362
+            add_state_core = 362
+            transfer_state = 364
+            add_state_core = 364
+            transfer_state = 367
+            add_state_core = 367
+            transfer_state = 370
+            add_state_core = 370
+            transfer_state = 365
+            add_state_core = 365
+            transfer_state = 366
+            add_state_core = 366
+            load_oob = "DIX_1936"
+        }
+		NYC = {
+            transfer_state = 358
+            add_state_core = 358
+            load_oob = "NYC_1936"
+        }
+		NEE = {
+            transfer_state = 357
+            add_state_core = 357
+            load_oob = "NEE_1936"
+        }
+		VMT = {
+            transfer_state = 1048
+            add_state_core = 1048
+            load_oob = "VMT_1936"
+        }
+		DAK = {
+            transfer_state = 390
+            add_state_core = 390
+            transfer_state = 389
+            add_state_core = 389
+            load_oob = "DAK_1936"
+        }
+		KNW = {
+            transfer_state = 1049
+            add_state_core = 1049
+            transfer_state = 369
+            add_state_core = 369
+            load_oob = "KNW_1936"
+        }
+		HAW = {
+            transfer_state = 629
+            add_state_core = 629
+			transfer_state = 638
+			add_state_core = 638
+            load_oob = "HAW_1936"
+        }
+		MEX = {
+			transfer_state = 1061
+		}
+		set_politics = {
+			ruling_party = revolutionary_anarchism
+		}
+		USA = {
+			set_cosmetic_tag = USA_AN
+		}
+		set_party_name = { 
+			ideology = vanguard_socialism
+			long_name = USA_vanguard_socialism_party_second
+			name = USA_vanguard_socialism_party_second
+		}
+    }
+}

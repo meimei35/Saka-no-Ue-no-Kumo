@@ -1,0 +1,5 @@
+﻿######################
+# Montenegrin Events #
+######################
+
+add_namespace = montenegro

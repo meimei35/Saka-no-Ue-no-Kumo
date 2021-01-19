@@ -1,0 +1,255 @@
+#############
+# Israel #
+#############
+ideas = {
+
+#################
+# Country ideas #
+#################
+
+	country = {
+		
+	}
+#################
+# Government #
+#################
+	economy_minister = {	
+		ISR_petetz_econ = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+						OR = {
+							has_government = right_authoritarianism
+							has_government = accelerationism
+						}
+			}
+			traits = {	
+				economy_minister
+				eco_industrialiser
+			}
+		}
+		ISR_rudolf_econ = {
+			allowed = {
+				original_tag = ISR
+			}
+			visible = {
+				has_government = libertarian_marxism
+			}
+			available = {
+				has_government = libertarian_marxism
+			}
+			traits = {	
+				economy_minister
+				eco_administrative_genius
+			}
+		}
+		ISR_mises_econ = {
+			allowed = {
+				original_tag = ISR
+			}
+			visible = {
+				has_government = liberalism
+			}
+			available = {
+				has_government = liberalism
+			}
+			traits = {	
+				economy_minister
+				eco_administrative_genius
+			}
+		}
+		ISR_kaplan_econ = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+						OR = {
+							has_government = social_democratism
+						}
+			}
+			traits = {	
+				economy_minister
+				eco_mixed_economy
+			}
+		}
+		ISR_dov_econ = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+						OR = {
+							has_government = right_authoritarianism
+							has_government = social_democratism
+							has_government = accelerationism
+						}
+			}
+			traits = {	
+				economy_minister
+				eco_planned_economy_proponent
+			}
+		}
+	}
+	foreign_minister = {	
+		ISR_gurion_foreign = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+					AND= {
+						NOT = {
+							has_country_leader = {
+							   name = "David Ben-Gurion"
+							   ruling_only = yes
+							}
+						}
+						OR = {
+							has_government = libertarian_marxism
+							has_government = liberalism
+							has_government = revisionist_socialism
+							has_government = social_democratism
+							
+						}
+					}
+
+			}
+			traits = {	
+				foreign_minister
+				for_great_compromiser
+			}
+		}
+		ISR_shamir_foreign = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+					OR = {
+						has_government = accelerationism
+						has_government = right_authoritarianism
+					}
+
+			}
+			traits = {	
+				foreign_minister
+				for_general_staffer
+			}
+		}
+		ISR_golda_foreign = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+					OR = {
+						has_government = libertarian_marxism
+						has_government = revisionist_socialism
+						has_government = social_democratism
+					}
+
+			}
+			traits = {	
+				foreign_minister
+				for_biased_intellectual
+			}
+		}
+	}
+#############
+# Companies #
+#############
+
+	#### General ####
+	industrial_concern = {
+	designer = yes
+		taas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea taas"}
+			allowed = {
+				original_tag = ISR
+			}
+			traits = {
+				industrial_manufacturer
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		rothschildcompany = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rothscildcompany"}
+			allowed = {
+				original_tag = ISR
+			}
+			visible = {
+				has_government = liberalism
+			}
+			traits = {
+				industrial_manufacturer
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+	}
+	#### Weapons ####
+	weapons_manufacturer = {
+	
+	}
+	
+	#### Air and Naval ####
+	air_naval_manufacturer = {
+	
+	}
+	
+#############
+# Theorist	#
+#############
+	chief_of_staff = {
+		ISR_dayan = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+				NOT = {
+				    has_government = accelerationism
+				}
+			}
+			traits = {	
+				chief_of_staff
+				ISR_dayan_trait
+			}
+		}
+		ISR_dori = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+				NOT = {
+				    has_government = accelerationism
+				}
+			}
+			traits = {	
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		ISR_sternchief = {
+			allowed = {
+					original_tag = ISR
+				}
+			available = {
+				    has_government = accelerationism
+				}
+			traits = {	
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+	}
+	theorist = {
+		
+	}
+}
