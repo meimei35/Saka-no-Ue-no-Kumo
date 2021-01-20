@@ -11,12 +11,6 @@ on_actions = {
 			MO2 = {
 				country_event = { id = mo2.101 days = 1 }
 			}
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				set_country_flag = show_welcome_splash
-			}
 
 			every_country = {
 				limit = {
