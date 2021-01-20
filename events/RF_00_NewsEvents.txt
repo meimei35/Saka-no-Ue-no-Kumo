@@ -4,66 +4,6 @@
 
 add_namespace = news
 
-country_event = {
-	id = news.intro
-	title = news.intro.t
-	desc = news.intro.d
-	picture = GFX_report_event_headless_statue
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = news.intro.a
-		country_event = news.1
-	}
-	option = {
-		name = news.intro.b
-		country_event = news.2
-	}
-	option = {
-		name = news.intro.c
-		country_event = news.3
-	}
-}
-
-country_event = {
-	id = news.1
-	title = news.1.t
-	desc = news.1.d
-	picture = GFX_report_event_headless_statue
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = news.1.a
-	}
-}
-
-country_event = {
-	id = news.2
-	title = news.2.t
-	desc = news.2.d
-	picture = GFX_report_event_headless_statue
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = news.2.a
-	}
-}
-
-country_event = {
-	id = news.3
-	title = news.3.t
-	desc = news.3.d
-	picture = GFX_report_event_headless_statue
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = news.3.a
-	}
-}
 # French National Council
 #news_event = {
 #	id = news.4
