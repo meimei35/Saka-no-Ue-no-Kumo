@@ -1,4 +1,4 @@
-capital = 195
+capital = 219
 oob = "RUS_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -13,10 +13,8 @@ set_research_slots = 3
 set_convoys = 175
 
 add_ideas = {
-	victor_in_the_velikaya_voyna
 	monopolized_industry
 	unstable_political_system
-	RUS_alexander_nechvolodov_hog_aut
 }
 
 

@@ -1,31 +1,6 @@
 ideas = {
 	country = {
 	
-		victor_in_the_velikaya_voyna = {
-			picture = ENG_the_war_to_end_all_wars
-			allowed = {
-				original_tag = RUS
-			}
-			removal_cost = -1
-			modifier = {
-				conscription_factor = -0.2
-				army_morale_factor = -0.1
-				training_time_factor = 0.5
-			}
-		}
-		victor_in_the_velikaya_voyna_1 = {
-			picture = ENG_the_war_to_end_all_wars
-			allowed = {
-				original_tag = RUS
-			}
-			removal_cost = -1
-			modifier = {
-				conscription_factor = -0.1
-				army_morale_factor = -0.05
-				training_time_factor = 0.25
-			}
-		}
-		
 		monopolized_industry = {
 			picture = great_depression
 			allowed = {
@@ -40,42 +15,6 @@ ideas = {
 			}
 		}
 		
-		RUS_drumhead_court_martial = {
-			picture = drumhead
-			allowed = {
-				original_tag = RUS
-			}
-			removal_cost = -1
-			modifier = {
-				subversive_activites_upkeep = -0.5
-			}
-		}	
-		
-		RUS_state_propaganda  = {
-			picture = drumhead
-			allowed = {
-				original_tag = RUS
-			}
-			removal_cost = -1
-			modifier = {
-				stability_weekly = 0.01
-			}
-		}		
-		unstable_political_system = {
-			picture = generic_disjointed_gov
-			allowed = {
-				original_tag = RUS
-			}
-			removal_cost = -1
-			modifier = {
-				political_power_cost = 0.5
-				stability_factor = -0.05
-				foreign_minister_cost_factor = 0.25
-				economy_minister_cost_factor = 0.25
-				security_minister_cost_factor = 0.25
-				head_of_intel_cost_factor = 0.25
-			}
-		}
 		unstable_political_system_1 = {
 			picture = generic_disjointed_gov
 			allowed = {

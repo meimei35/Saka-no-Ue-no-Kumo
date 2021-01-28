@@ -49,47 +49,6 @@ ideas = {
 			}
 		}
 		
-		JAP_three_month_camp = {
-			picture = FRA_national_mobilization_focus
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				war_support_factor = 0.05
-			}
-			targeted_modifier = {
-				tag = BYJ
-				attack_bonus_against = 0.1
-				defense_bonus_against = -0.1
-			}
-		}
-		
-		JAP_tributary_act = {
-			picture = generic_goods_red_bonus
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				local_resources_factor = 0.1
-			}
-		}
-		
-		JAP_litigation_blockade = {
-			picture = generic_spy_intel
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				war_support_factor = 0.05
-				stability_factor = 0.05
-				production_speed_buildings_factor = 0.15
-			}
-		}
-		
 		JAP_bail_out = {
 			picture = jap_zaibatsu_ally
 			removal_cost = -1
@@ -227,41 +186,6 @@ ideas = {
 			}
 		}
 		
-		JPR_general_strikes = {
-			picture = FRA_factory_strikes
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				production_factory_max_efficiency_factor = -0.15
-				political_power_gain = 0.15
-			}
-		}
-		
-		JPR_roads = {
-			picture = generic_build_infrastructure
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				industry_repair_factor = 0.25
-			}
-		}
-		
-		JPR_mantetsu = {
-			picture = generic_infantry_bonus
-			removal_cost = -1
-			allowed = {
-				original_tag = JAP
-			}
-			modifier = {
-				stability_factor = -0.05
-				production_speed_buildings_factor = -0.05
-				industrial_capacity_factory = -0.05
-			}
-		}
 		
 		JAP_cabinet = {
 			picture = generic_pp_unity_bonus

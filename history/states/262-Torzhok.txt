@@ -12,14 +12,14 @@ state={
 	}
 
 	history={
-		owner = RUS
+		owner = SOV
 		buildings = {
 			infrastructure = 1
 			#12530 = {
 			#	naval_base = 1 #Why is there a naval base here?, this state is impassable.
 			#}
 		}
-		add_core_of = RUS
+		add_core_of = SOV
 	}
 
 	provinces={
