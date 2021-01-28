@@ -16,7 +16,7 @@ SCO = {
 	color = rgb { 0 101 189 }
 	color_ui = rgb { 0 101 189 }
 }
-RUS = {
+SOV = {
 	color = rgb { 0 127 14 }
 	color_ui = rgb { 0 127 14 }
 }
