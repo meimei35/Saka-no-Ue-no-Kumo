@@ -55,8 +55,8 @@ set_popularities = {
 set_cosmetic_tag = MAN_JAP
 
 create_country_leader = {
-	name = "Puyi"
-	picture = "puyi.tga"
+	name = "Nobusuke Kishi"
+	picture = "Portrait_Nobusuke_Kishe.dds"
 	expire = "1938.10.12"
 	ideology = oligarchy
 	traits = {
